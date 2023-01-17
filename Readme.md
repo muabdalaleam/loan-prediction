@@ -37,6 +37,6 @@ using the plots and statistecs in the EDA section.<br>
 <h3><strong>Thanks for:</strong></h3><ul>
   <li>Jet brains DataLore
   <li>Kaggle
-  <li><a href= https://www.kaggle.com/yaheaal>yaheaal</a><em>(his project helped me(I didn't copy his code))</em>
+  <li><a href= https://www.kaggle.com/yaheaal>Yahea Alashkar</a><em>(his project helped me(I didn't copy his code))</em>
   <li>Udacity <em>(DECI scholarship)
   <li>You!!
