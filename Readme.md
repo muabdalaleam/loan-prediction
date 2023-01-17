@@ -18,8 +18,8 @@ using the plots and statistecs in the EDA section.<br>
   like 3D plots or plotly plots but I will make in<br>
   the next project.<br><br>
   <li><strong>Personal limitations</strong>:
-  I am now in my preparatory exams week so I couldn't<br>
-  complete this project in a short time.<br><br></ul>
+  I am now in my exams week so I<br> 
+  couldn't complete this project in a short time.<br><br></ul>
   
 <h3><strong>Sources:</strong></h3><ol>
   <li>Kaggle datasets
