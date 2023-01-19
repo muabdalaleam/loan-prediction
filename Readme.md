@@ -20,7 +20,9 @@ using the plots and statistecs in the EDA section.<br>
   <li><strong>Personal limitations</strong>:
   I am now in my exams week so I<br> 
   couldn't complete this project in a short time.<br><br></ul>
-  
+  <li><strong>Time limitations</strong>
+  There may be some typos and grammer mistakes
+  so please don't focus n them.
 <h3><strong>Sources:</strong></h3><ol>
   <li>Kaggle datasets
   <li>W3-schools color picker
