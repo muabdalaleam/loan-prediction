@@ -19,10 +19,10 @@ using the plots and statistecs in the EDA section.<br>
   the next project.<br><br>
   <li><strong>Personal limitations</strong>:
   I am now in my exams week so I<br> 
-  couldn't complete this project in a short time.<br><br></ul>
+  couldn't complete this project in a short time.
   <li><strong>Time limitations</strong>
-  There may be some typos and grammer mistakes
-  so please don't focus n them.
+  There may be some typos and grammer mistakes<br>
+  so please don't focus n them.<br><br></ul>
 <h3><strong>Sources:</strong></h3><ol>
   <li>Kaggle datasets
   <li>W3-schools color picker
