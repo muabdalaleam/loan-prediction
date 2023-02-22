@@ -1,17 +1,17 @@
-<h3><strong>Liscence:</strong></h3><ul>
+<h2><strong>Liscence :scroll::</strong></h3><ul>
 <li>This is an <em>open scource</em> project so you can copy what<br>
 do you want but you should at least understand the<br>
 code you have copied.<br><br>
 <li>You don't have permission to say this is your project.</ul>
 
-<h3><strong>Project describtion:</strong></h3>
+<h2><strong>Project describtion :page_facing_up::</strong></h3>
 This is classification, wragling and EDA project we will<br>
 try to create a very strong classification model that can<br>
 detect will your loan request be accepted or not.<br><br>
 And we will try to take important conlusions from the data<br>
 using the plots and statistecs in the EDA section.<br>
 
-<h3><strong>Project Limitations:</strong></h3><ul>
+<h2><strong>Project Limitations :no_entry::</strong></h3><ul>
   <li><strong>Experince limitations</strong>:
   Because this is my first project<br>
   so I couldn't make more complex models or plots<br>
@@ -23,7 +23,7 @@ using the plots and statistecs in the EDA section.<br>
   <li><strong>Time limitations</strong>
   There may be some typos and grammer mistakes<br>
   so please don't focus n them.<br><br></ul>
-<h3><strong>Sources:</strong></h3><ol>
+<h2><strong>Sources :mag::</strong></h3><ol>
   <li>Kaggle datasets
   <li>W3-schools color picker
   <li>Sk-learn documentation
@@ -36,7 +36,7 @@ using the plots and statistecs in the EDA section.<br>
   <li>Of course stackoverflow
   <li>And a lot more...<br><br></ol>
   
-<h3><strong>Thanks for:</strong></h3><ul>
+<h2><strong>Thanks for :pray::</strong></h3><ul>
   <li>Jet brains DataLore
   <li>Kaggle
   <li><a href= https://www.kaggle.com/yaheaal>Yahea Alashkar</a><em>(his project helped me(I didn't copy his code))</em>
