@@ -1,4 +1,5 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/muhammed-abdelaleam/Loan-prediction-project/HEAD?labpath=https%3A%2F%2Fgithub.com%2Fmuhammed-abdelaleam%2FLoan-prediction-project%2Fblob%2Fmain%2FLoan%2520prediction%25200.1.ipynb)
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/muhammed-abdelaleam/Loan-prediction-project/blob/main/Loan%20prediction%200.1.ipynb)
+
 <h2><strong>Liscence :scroll::</strong></h3><ul>
 <li>This is an <em>open scource</em> project so you can copy what<br>
 do you want but you should at least understand the<br>
