@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2><strong>Welcome :smile::</strong></h2>
 Hello this is my first real project it's just a beginner<br>
 level project so don't expect a lot of things but I wish you<br> 
@@ -7,6 +8,9 @@ january 2023 but it had some small edits on june 2023.
 Best way to view the main notebook:
 
 [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/muhammed-abdelaleam/Loan-prediction-project/blob/main/Loan%20prediction%200.1.ipynb)
+=======
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/muhammed-abdelaleam/Loan-prediction-project/blob/main/Loan%20prediction%20.ipynb)
+>>>>>>> db132d01bbb7d5f3c54400acf2d895d8ed4b9902
 
 <h2><strong>Liscence :scroll::</strong></h2><ul>
 <li>This is an <em>open scource</em> project so you can copy what<br>
