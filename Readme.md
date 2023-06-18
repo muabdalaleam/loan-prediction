@@ -6,7 +6,7 @@ january 2023 but it had some small edits on june 2023.
 
 Best way to view the main notebook:
 
-[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/muhammed-abdelaleam/Loan-prediction-project/blob/main/Loan%20prediction.ipynb)
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/muhammed-abdelaleam/Loan-prediction-project/blob/main/Loan%20prediction.ipynb) *(The SVG plots may not render so if you want to see them please download the project)*
 =======
 <h2><strong>Liscence :scroll::</strong></h2><ul>
 <li>This is an <em>open scource</em> project so you can copy what<br>
