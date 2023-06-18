@@ -4,7 +4,8 @@ level project so don't expect a lot of things but I wish you<br>
 to enjoy exploring it the project was done on the first of<br>
 january 2023 but it had some small edits on june 2023.
 
-Best way to view the main notebook <sub>*(The SVG plots may not render so if you want to see them please download the project)*:</sub>
+Best way to view the main notebook <br>
+<sub>**(The SVG plots may not render so if you want to see them please download the project)*:</sub>
 
 [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/muhammed-abdelaleam/Loan-prediction-project/blob/main/Loan%20prediction.ipynb)
 =======
