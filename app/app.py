@@ -1,5 +1,5 @@
 # >>>>>>>>>>>>>>>>> Importing the packeges & setting the constants <<<<<<<<<<<<<<
-import keras
+# import keras
 import joblib
 import sklearn
 
@@ -25,7 +25,7 @@ df = pd.read_csv('data-cleaning/cleaned-data/processsed-data.csv')
 scaler               = joblib.load('models/scaler.joblib')
 encoder              = joblib.load('models/encoder.joblib')
 lr_dt_model          = joblib.load('models/lr_dt.joblib')
-nn_model             = keras.models.load_model('models/nn-model.h5')
+# nn_model             = keras.models.load_model('models/nn-model.h5')
 
 def preprocess_input(arr: np.array):
     
