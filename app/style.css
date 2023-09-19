@@ -1,0 +1,43 @@
+/* Don't apply fade effect, it's constantly recalculating */
+.recalculating {
+    opacity: 1;
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #CDD7D6;
+    border-radius: 10px;
+}
+
+.output-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #102542;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;}
+
+.card {
+    margin: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+
+.header {
+    margin-top: 25px;
+}
