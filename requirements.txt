@@ -4,6 +4,7 @@ numpy
 tensorflow
 imblearn
 matplotlib
+polars
 seaborn
 sklearn-pandas
 imblearn
