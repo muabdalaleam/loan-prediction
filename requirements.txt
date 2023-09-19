@@ -6,3 +6,5 @@ imblearn
 matplotlib
 seaborn
 sklearn-pandas
+imblearn
+sklearn
