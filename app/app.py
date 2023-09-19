@@ -17,15 +17,15 @@ COLUMNS = ['Gender', 'Married', 'Education',
            'Loan_Amount', 'Total_Monthly_Income']
 
 
-df = pd.read_csv('../data-cleaning/cleaned-data/processsed-data.csv')
+df = pd.read_csv('data-cleaning/cleaned-data/processsed-data.csv')
 # ===============================================================================
 
 
 # >>>>>>>>>>>>>>>>>>>> Loading the models & data preparing <<<<<<<<<<<<<<<<<<<<<<
-scaler               = joblib.load('../models/scaler.joblib')
-encoder              = joblib.load('../models/encoder.joblib')
-lr_dt_model          = joblib.load('../models/lr_dt.joblib')
-nn_model             = keras.models.load_model('../models/nn-model.h5')
+scaler               = joblib.load('models/scaler.joblib')
+encoder              = joblib.load('models/encoder.joblib')
+lr_dt_model          = joblib.load('models/lr_dt.joblib')
+nn_model             = keras.models.load_model('models/nn-model.h5')
 
 def preprocess_input(arr: np.array):
     
@@ -61,7 +61,7 @@ def preprocess_input(arr: np.array):
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>> Shiny app Inputs & Styling <<<<<<<<<<<<<<<<<<<<<<<<<
-with open('style.css', 'r') as file:
+with open('app/style.css', 'r') as file:
     css_code = file.read()
 
 app_ui = ui.page_fluid(
