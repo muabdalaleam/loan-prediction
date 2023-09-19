@@ -1,0 +1,544 @@
+Gender,Married,Education,Property_Area,Monthly_Income,Extra_Monthly_Income,Loan_Term,Credit_History,Loan_Status,Dependents,Employment_Type,Loan_Amount,Total_Monthly_Income
+Male,Yes,Graduate,Rural,4583,1508,104,Good,Rejected,1,Not-Self-Employed,62464,6091
+Male,Yes,Graduate,Urban,3000,0,104,Good,Accepted,0,Self-Employed,464,3000
+Male,Yes,Not Graduate,Urban,2583,2358,104,Good,Accepted,0,Not-Self-Employed,54464,4941
+Male,No,Graduate,Urban,6000,0,104,Good,Accepted,0,Not-Self-Employed,9928,6000
+Male,Yes,Graduate,Urban,5417,4196,104,Good,Accepted,2,Self-Employed,4856,9613
+Male,Yes,Not Graduate,Urban,2333,1516,104,Good,Accepted,0,Not-Self-Employed,29464,3849
+Male,Yes,Graduate,Semiurban,3036,2504,104,Bad,Rejected,3,Not-Self-Employed,26928,5540
+Male,Yes,Graduate,Urban,4006,1526,104,Good,Accepted,2,Not-Self-Employed,36928,5532
+Male,Yes,Graduate,Semiurban,12841,10968,104,Good,Rejected,1,Not-Self-Employed,21320,23809
+Male,Yes,Graduate,Urban,3200,700,104,Good,Accepted,2,Not-Self-Employed,4464,3900
+Male,Yes,Graduate,Urban,2500,1840,104,Good,Accepted,2,Not-Self-Employed,43464,4340
+Male,Yes,Graduate,Urban,3073,8106,104,Good,Accepted,2,Not-Self-Employed,3392,11179
+Male,No,Graduate,Rural,1853,2840,104,Good,Rejected,0,Not-Self-Employed,48464,4693
+Male,Yes,Graduate,Urban,1299,1086,120,Good,Accepted,2,Not-Self-Employed,17000,2385
+Male,No,Graduate,Urban,4950,0,104,Good,Accepted,0,Not-Self-Employed,59464,4950
+Female,No,Graduate,Urban,3510,0,104,Bad,Rejected,0,Not-Self-Employed,10464,3510
+Male,Yes,Not Graduate,Rural,4887,0,104,Good,Rejected,0,Not-Self-Employed,1928,4887
+Male,Yes,Graduate,Urban,2600,3500,104,Good,Accepted,0,Not-Self-Employed,49464,6100
+Male,Yes,Not Graduate,Urban,7660,0,104,Bad,Rejected,0,Not-Self-Employed,38464,7660
+Male,Yes,Graduate,Urban,5955,5625,104,Good,Accepted,1,Not-Self-Employed,52856,11580
+Male,Yes,Not Graduate,Semiurban,2600,1911,104,Bad,Rejected,0,Not-Self-Employed,50464,4511
+Unknown,Yes,Not Graduate,Rural,3365,1917,104,Bad,Rejected,2,Not-Self-Employed,46464,5282
+Male,Yes,Graduate,Semiurban,9560,0,104,Good,Accepted,0,Self-Employed,59928,9560
+Male,Yes,Graduate,Semiurban,2799,2253,104,Good,Accepted,0,Not-Self-Employed,56464,5052
+Male,Yes,Not Graduate,Urban,4226,1040,104,Good,Accepted,2,Not-Self-Employed,44464,5266
+Male,No,Not Graduate,Urban,1442,0,104,Good,Rejected,0,Not-Self-Employed,35000,1442
+Female,No,Graduate,Semiurban,3750,2083,104,Good,Accepted,2,Not-Self-Employed,54464,5833
+Male,No,Graduate,Urban,3167,0,104,Good,Rejected,0,Not-Self-Employed,8464,3167
+Male,No,Graduate,Rural,4692,0,104,Good,Rejected,1,Self-Employed,40464,4692
+Male,Yes,Graduate,Semiurban,3500,1667,104,Good,Accepted,0,Not-Self-Employed,48464,5167
+Male,No,Graduate,Rural,12500,3000,104,Good,Rejected,3,Not-Self-Employed,57856,15500
+Male,Yes,Graduate,Urban,1828,1330,104,Bad,Rejected,0,Not-Self-Employed,34464,3158
+Female,Yes,Graduate,Semiurban,3667,1459,104,Good,Accepted,0,Not-Self-Employed,12928,5126
+Male,No,Graduate,Urban,4166,7210,104,Good,Accepted,0,Not-Self-Employed,52928,11376
+Male,No,Not Graduate,Semiurban,3748,1668,104,Good,Accepted,0,Not-Self-Employed,44464,5416
+Male,No,Graduate,Urban,3600,0,104,Good,Rejected,0,Not-Self-Employed,14464,3600
+Male,No,Graduate,Urban,1800,1213,104,Good,Accepted,0,Not-Self-Employed,47000,3013
+Male,Yes,Graduate,Semiurban,3941,2336,104,Good,Accepted,0,Not-Self-Employed,2928,6277
+Male,Yes,Not Graduate,Urban,4695,0,104,Good,Accepted,0,Self-Employed,30464,4695
+Female,No,Graduate,Urban,3410,0,104,Good,Accepted,0,Not-Self-Employed,22464,3410
+Male,Yes,Graduate,Urban,5649,0,104,Good,Accepted,1,Not-Self-Employed,44000,5649
+Male,Yes,Graduate,Urban,5821,0,104,Good,Accepted,0,Not-Self-Employed,12928,5821
+Female,Yes,Graduate,Urban,2645,3440,104,Bad,Rejected,0,Not-Self-Employed,54464,6085
+Female,No,Graduate,Semiurban,4000,2275,104,Good,Accepted,0,Not-Self-Employed,12928,6275
+Female,Yes,Not Graduate,Semiurban,1928,1644,104,Good,Accepted,0,Not-Self-Employed,34464,3572
+Female,No,Graduate,Semiurban,3086,0,104,Good,Accepted,0,Not-Self-Employed,54464,3086
+Female,No,Graduate,Semiurban,4230,0,104,Good,Rejected,0,Not-Self-Employed,46464,4230
+Male,Yes,Graduate,Urban,4616,0,104,Good,Rejected,2,Not-Self-Employed,2928,4616
+Female,Yes,Graduate,Urban,11500,0,104,Bad,Rejected,1,Self-Employed,23856,11500
+Male,Yes,Graduate,Semiurban,2708,1167,104,Good,Accepted,2,Not-Self-Employed,31464,3875
+Male,Yes,Graduate,Semiurban,2132,1591,104,Good,Accepted,0,Not-Self-Employed,30464,3723
+Male,Yes,Graduate,Rural,3366,2200,104,Good,Rejected,0,Not-Self-Employed,3928,5566
+Male,Yes,Graduate,Urban,8080,2250,104,Good,Accepted,1,Not-Self-Employed,48928,10330
+Male,Yes,Not Graduate,Urban,3357,2859,104,Good,Accepted,2,Not-Self-Employed,12928,6216
+Male,Yes,Graduate,Urban,2500,3796,104,Good,Accepted,0,Not-Self-Employed,54464,6296
+Male,Yes,Graduate,Urban,3029,0,104,Good,Accepted,3,Not-Self-Employed,33464,3029
+Male,Yes,Not Graduate,Rural,2609,3449,180,Bad,Rejected,0,Self-Employed,33928,6058
+Female,No,Graduate,Semiurban,4166,0,104,Bad,Rejected,0,Not-Self-Employed,50464,4166
+Male,Yes,Graduate,Semiurban,5726,4595,104,Good,Rejected,0,Not-Self-Employed,61392,10321
+Male,No,Not Graduate,Urban,3200,2254,180,Bad,Rejected,0,Not-Self-Employed,60464,5454
+Male,Yes,Graduate,Urban,10750,0,104,Good,Accepted,1,Not-Self-Employed,49856,10750
+Male,Yes,Not Graduate,Urban,7100,0,60,Good,Accepted,3,Self-Employed,59464,7100
+Female,No,Graduate,Semiurban,4300,0,104,Bad,Rejected,0,Not-Self-Employed,4928,4300
+Male,Yes,Graduate,Urban,3208,3066,104,Good,Accepted,0,Not-Self-Employed,40928,6274
+Male,Yes,Not Graduate,Semiurban,1875,1875,104,Good,Accepted,2,Self-Employed,31464,3750
+Male,No,Graduate,Semiurban,3500,0,44,Good,Accepted,0,Not-Self-Employed,15464,3500
+Male,Yes,Not Graduate,Semiurban,4755,0,104,Bad,Rejected,3,Not-Self-Employed,29464,4755
+Male,Yes,Graduate,Semiurban,5266,1774,104,Good,Accepted,3,Self-Employed,55928,7040
+Male,No,Graduate,Urban,3750,0,224,Good,Rejected,0,Not-Self-Employed,47464,3750
+Male,No,Graduate,Urban,3750,4750,104,Good,Rejected,0,Not-Self-Employed,44928,8500
+Male,Yes,Graduate,Urban,1000,3022,104,Good,Rejected,1,Self-Employed,44464,4022
+Male,Yes,Graduate,Semiurban,3167,4000,44,Bad,Rejected,3,Not-Self-Employed,48928,7167
+Female,No,Graduate,Semiurban,3846,0,104,Good,Accepted,0,Not-Self-Employed,45464,3846
+Female,Yes,Graduate,Urban,1378,1881,104,Good,Rejected,2,Not-Self-Employed,35928,3259
+Male,Yes,Graduate,Urban,3988,0,240,Good,Accepted,1,Not-Self-Employed,50000,3988
+Male,No,Graduate,Semiurban,2366,2531,104,Good,Accepted,0,Not-Self-Employed,4928,4897
+Male,Yes,Graduate,Semiurban,2500,2118,104,Good,Accepted,0,Not-Self-Employed,38464,4618
+Male,No,Graduate,Urban,8566,0,104,Good,Accepted,0,Not-Self-Employed,13392,8566
+Male,Yes,Graduate,Semiurban,5695,4167,104,Good,Accepted,0,Not-Self-Employed,43928,9862
+Male,Yes,Graduate,Semiurban,2958,2900,104,Good,Accepted,0,Not-Self-Employed,65464,5858
+Male,Yes,Graduate,Semiurban,6250,5654,180,Good,Accepted,2,Not-Self-Employed,56928,11904
+Male,Yes,Not Graduate,Urban,3273,1820,104,Good,Accepted,2,Not-Self-Employed,15464,5093
+Male,No,Graduate,Semiurban,4133,0,104,Good,Accepted,0,Not-Self-Employed,56464,4133
+Male,No,Not Graduate,Semiurban,3620,0,120,Good,Accepted,0,Not-Self-Employed,25000,3620
+Female,Yes,Graduate,Semiurban,2484,2302,104,Good,Accepted,0,Not-Self-Employed,5928,4786
+Male,Yes,Graduate,Semiurban,1977,997,104,Good,Accepted,0,Not-Self-Employed,50000,2974
+Male,Yes,Not Graduate,Semiurban,4188,0,180,Good,Accepted,0,Not-Self-Employed,49464,4188
+Male,Yes,Graduate,Semiurban,1759,3541,104,Good,Accepted,0,Not-Self-Employed,65464,5300
+Male,Yes,Not Graduate,Urban,4288,3263,180,Good,Accepted,2,Not-Self-Employed,1928,7551
+Male,No,Graduate,Semiurban,4843,3806,104,Good,Accepted,0,Not-Self-Employed,19928,8649
+Male,No,Graduate,Urban,3816,754,104,Good,Accepted,0,Not-Self-Employed,28928,4570
+Male,Yes,Graduate,Urban,3052,1030,104,Good,Accepted,1,Not-Self-Employed,34464,4082
+Male,Yes,Graduate,Urban,11417,1126,104,Good,Accepted,2,Not-Self-Employed,28392,12543
+Male,No,Not Graduate,Rural,7333,0,104,Good,Rejected,0,Not-Self-Employed,54464,7333
+Male,Yes,Graduate,Urban,3800,3600,104,Bad,Rejected,2,Not-Self-Employed,19392,7400
+Male,Yes,Not Graduate,Semiurban,2071,754,224,Good,Accepted,3,Not-Self-Employed,28464,2825
+Male,No,Graduate,Urban,5316,0,104,Good,Accepted,0,Not-Self-Employed,4928,5316
+Female,Yes,Graduate,Semiurban,2929,2333,104,Good,Accepted,0,Not-Self-Employed,7928,5262
+Male,Yes,Not Graduate,Rural,3572,4114,104,Bad,Rejected,0,Not-Self-Employed,20928,7686
+Male,No,Graduate,Semiurban,5050,0,104,Good,Accepted,0,Not-Self-Employed,52464,5050
+Male,Yes,Graduate,Rural,14583,0,180,Good,Accepted,1,Not-Self-Employed,53928,14583
+Female,Yes,Graduate,Semiurban,3167,2283,104,Good,Accepted,0,Not-Self-Employed,22928,5450
+Male,Yes,Graduate,Rural,5568,2142,104,Good,Rejected,0,Not-Self-Employed,43928,7710
+Female,No,Graduate,Urban,10408,0,104,Good,Accepted,0,Not-Self-Employed,62392,10408
+Male,Yes,Graduate,Rural,5667,2667,104,Good,Accepted,0,Not-Self-Employed,48928,8334
+Female,No,Graduate,Semiurban,4166,0,104,Good,Accepted,0,Not-Self-Employed,44000,4166
+Female,No,Graduate,Semiurban,2137,8980,104,Bad,Accepted,0,Not-Self-Employed,5928,11117
+Male,Yes,Graduate,Semiurban,2957,0,104,Good,Accepted,2,Not-Self-Employed,15464,2957
+Male,Yes,Not Graduate,Rural,4300,2014,104,Good,Accepted,0,Not-Self-Employed,62928,6314
+Unknown,Yes,Graduate,Rural,23803,0,104,Good,Accepted,3,Not-Self-Employed,42320,23803
+Male,Yes,Graduate,Urban,10513,3850,180,Bad,Rejected,1,Self-Employed,28928,14363
+Male,No,Graduate,Urban,2014,1929,104,Good,Accepted,0,Not-Self-Employed,8464,3943
+Male,No,Graduate,Semiurban,2718,0,104,Good,Accepted,0,Not-Self-Employed,4464,2718
+Male,Yes,Graduate,Semiurban,3459,0,120,Good,Accepted,0,Self-Employed,25000,3459
+Male,No,Graduate,Semiurban,4895,0,104,Good,Accepted,0,Not-Self-Employed,36464,4895
+Male,Yes,Graduate,Semiurban,4000,7750,104,Good,Rejected,3,Not-Self-Employed,27856,11750
+Female,Yes,Graduate,Rural,4583,0,104,Good,Rejected,0,Not-Self-Employed,18464,4583
+Male,Yes,Graduate,Urban,3316,3500,104,Good,Accepted,2,Self-Employed,22464,6816
+Male,No,Graduate,Semiurban,14999,0,104,Bad,Rejected,0,Not-Self-Employed,45392,14999
+Male,Yes,Not Graduate,Rural,4200,1430,104,Good,Rejected,2,Not-Self-Employed,63464,5630
+Male,Yes,Graduate,Rural,5042,2083,104,Good,Rejected,2,Not-Self-Employed,53928,7125
+Male,No,Graduate,Urban,5417,0,104,Good,Accepted,0,Not-Self-Employed,36928,5417
+Male,No,Graduate,Semiurban,6950,0,180,Good,Accepted,0,Self-Employed,43928,6950
+Male,Yes,Graduate,Semiurban,2698,2034,104,Good,Accepted,0,Not-Self-Employed,56464,4732
+Male,Yes,Graduate,Urban,11757,0,180,Good,Accepted,2,Not-Self-Employed,55928,11757
+Female,Yes,Graduate,Semiurban,2330,4486,104,Good,Accepted,0,Not-Self-Employed,34464,6816
+Female,Yes,Graduate,Urban,14866,0,104,Good,Accepted,2,Not-Self-Employed,4464,14866
+Male,Yes,Graduate,Urban,1538,1425,104,Good,Accepted,1,Not-Self-Employed,30000,2963
+Female,No,Graduate,Rural,10000,1666,104,Good,Rejected,0,Not-Self-Employed,28392,11666
+Male,Yes,Graduate,Semiurban,4860,830,104,Good,Accepted,0,Not-Self-Employed,59464,5690
+Male,No,Graduate,Rural,6277,0,104,Bad,Rejected,0,Not-Self-Employed,52464,6277
+Male,Yes,Graduate,Rural,2577,3750,104,Good,Accepted,0,Self-Employed,20928,6327
+Male,No,Graduate,Urban,9166,0,104,Good,Rejected,0,Not-Self-Employed,47392,9166
+Male,Yes,Not Graduate,Rural,2281,0,104,Good,Rejected,2,Not-Self-Employed,47464,2281
+Male,No,Graduate,Urban,3254,0,104,Good,Accepted,0,Not-Self-Employed,50000,3254
+Male,Yes,Graduate,Semiurban,39999,0,180,Bad,Accepted,3,Not-Self-Employed,10176,39999
+Male,Yes,Graduate,Urban,9538,0,104,Good,Accepted,1,Not-Self-Employed,55928,9538
+Male,No,Graduate,Rural,2980,2083,104,Good,Accepted,0,Not-Self-Employed,54464,5063
+Male,Yes,Graduate,Semiurban,4583,5625,104,Good,Accepted,0,Not-Self-Employed,58392,10208
+Male,Yes,Not Graduate,Semiurban,1863,1041,104,Good,Accepted,0,Not-Self-Employed,32464,2904
+Male,Yes,Graduate,Urban,7933,0,104,Good,Rejected,0,Not-Self-Employed,12856,7933
+Male,Yes,Graduate,Semiurban,3089,1280,104,Bad,Rejected,1,Not-Self-Employed,55464,4369
+Male,Yes,Graduate,Rural,4167,1447,104,Good,Accepted,2,Not-Self-Employed,26928,5614
+Male,Yes,Graduate,Urban,9323,0,180,Good,Accepted,0,Not-Self-Employed,9464,9323
+Male,Yes,Graduate,Rural,3707,3166,104,Good,Accepted,0,Not-Self-Employed,50928,6873
+Female,Yes,Graduate,Rural,4583,0,104,Good,Rejected,0,Not-Self-Employed,46464,4583
+Male,Yes,Graduate,Rural,2439,3333,104,Good,Accepted,0,Not-Self-Employed,63464,5772
+Male,No,Graduate,Semiurban,2237,0,224,Bad,Rejected,0,Not-Self-Employed,63000,2237
+Male,Yes,Graduate,Semiurban,8000,0,104,Good,Accepted,2,Not-Self-Employed,3392,8000
+Male,Yes,Not Graduate,Rural,1820,1769,104,Good,Accepted,0,Not-Self-Employed,29464,3589
+Unknown,Yes,Graduate,Urban,51763,0,44,Good,Accepted,3,Not-Self-Employed,44640,51763
+Male,Yes,Not Graduate,Rural,3522,0,180,Good,Rejected,3,Not-Self-Employed,15464,3522
+Male,Yes,Graduate,Semiurban,5708,5625,104,Good,Accepted,0,Not-Self-Employed,55928,11333
+Male,Yes,Not Graduate,Semiurban,4344,736,104,Good,Rejected,0,Self-Employed,21464,5080
+Male,Yes,Graduate,Rural,3497,1964,104,Good,Accepted,0,Not-Self-Employed,50464,5461
+Male,Yes,Graduate,Rural,2045,1619,104,Good,Accepted,2,Not-Self-Employed,35464,3664
+Male,Yes,Graduate,Semiurban,5516,11300,104,Bad,Rejected,3,Not-Self-Employed,36248,16816
+Male,Yes,Graduate,Semiurban,3750,0,104,Good,Accepted,1,Not-Self-Employed,50464,3750
+Male,No,Not Graduate,Urban,2333,1451,224,Bad,Rejected,0,Not-Self-Employed,36464,3784
+Male,Yes,Graduate,Urban,6400,7250,104,Bad,Rejected,1,Not-Self-Employed,48928,13650
+Male,Yes,Graduate,Semiurban,4600,0,180,Good,Accepted,0,Not-Self-Employed,7464,4600
+Male,Yes,Graduate,Semiurban,33846,0,104,Good,Rejected,1,Not-Self-Employed,63392,33846
+Female,Yes,Graduate,Semiurban,3625,0,104,Good,Accepted,0,Not-Self-Employed,42464,3625
+Male,Yes,Graduate,Semiurban,39147,4750,104,Good,Accepted,0,Self-Employed,54464,43897
+Male,Yes,Graduate,Rural,2178,0,44,Bad,Rejected,1,Self-Employed,464,2178
+Unknown,Yes,Graduate,Rural,674,5296,104,Good,Accepted,0,Self-Employed,36928,5970
+Male,Yes,Graduate,Rural,9328,0,180,Good,Accepted,0,Not-Self-Employed,56928,9328
+Male,No,Not Graduate,Rural,4885,0,104,Good,Accepted,0,Not-Self-Employed,48000,4885
+Male,No,Graduate,Semiurban,12000,0,104,Good,Rejected,0,Not-Self-Employed,32928,12000
+Male,Yes,Not Graduate,Urban,6033,0,104,Good,Rejected,0,Not-Self-Employed,28928,6033
+Male,No,Graduate,Semiurban,3858,0,104,Good,Accepted,0,Not-Self-Employed,10464,3858
+Male,No,Graduate,Rural,4191,0,104,Good,Accepted,0,Not-Self-Employed,54464,4191
+Male,Yes,Graduate,Semiurban,3125,2583,104,Good,Rejected,1,Not-Self-Employed,38928,5708
+Male,No,Graduate,Rural,8333,3750,104,Good,Accepted,0,Not-Self-Employed,55928,12083
+Female,No,Not Graduate,Urban,1907,2365,104,Good,Accepted,0,Not-Self-Employed,54464,4272
+Male,No,Graduate,Urban,11000,0,104,Good,Rejected,0,Self-Employed,17464,11000
+Male,Yes,Not Graduate,Semiurban,2600,2500,104,Good,Accepted,1,Not-Self-Employed,24464,5100
+Male,No,Graduate,Semiurban,4923,0,104,Bad,Accepted,2,Not-Self-Employed,34928,4923
+Male,Yes,Not Graduate,Urban,3500,1083,104,Good,Accepted,1,Not-Self-Employed,3928,4583
+Male,Yes,Not Graduate,Semiurban,3917,0,104,Good,Accepted,2,Not-Self-Employed,58464,3917
+Female,No,Not Graduate,Semiurban,4408,0,104,Good,Accepted,0,Not-Self-Employed,54464,4408
+Female,No,Graduate,Urban,3244,0,104,Good,Accepted,0,Not-Self-Employed,14464,3244
+Male,No,Not Graduate,Rural,3975,2531,104,Good,Accepted,0,Not-Self-Employed,55000,6506
+Male,No,Graduate,Urban,2479,0,104,Good,Accepted,0,Not-Self-Employed,59000,2479
+Male,No,Graduate,Semiurban,3418,0,104,Good,Rejected,0,Not-Self-Employed,61464,3418
+Female,No,Graduate,Semiurban,10000,0,104,Good,Rejected,0,Not-Self-Employed,17392,10000
+Male,Yes,Graduate,Semiurban,3430,1250,104,Bad,Rejected,3,Not-Self-Employed,62464,4680
+Male,Yes,Graduate,Urban,7787,0,104,Good,Accepted,1,Self-Employed,43392,7787
+Male,Yes,Not Graduate,Rural,5703,0,104,Good,Accepted,3,Self-Employed,64464,5703
+Male,Yes,Graduate,Urban,3173,3021,104,Good,Accepted,0,Not-Self-Employed,5928,6194
+Male,Yes,Not Graduate,Semiurban,3850,983,104,Good,Accepted,3,Not-Self-Employed,34464,4833
+Male,Yes,Graduate,Rural,150,1800,104,Good,Rejected,0,Not-Self-Employed,3928,1950
+Male,Yes,Graduate,Semiurban,3727,1775,104,Good,Accepted,0,Not-Self-Employed,65464,5502
+Male,Yes,Graduate,Semiurban,5000,0,104,Bad,Rejected,2,Not-Self-Employed,6464,5000
+Male,Yes,Graduate,Urban,2221,0,104,Bad,Rejected,0,Not-Self-Employed,60000,2221
+Male,Yes,Graduate,Semiurban,4009,1717,104,Good,Accepted,2,Not-Self-Employed,50464,5726
+Male,No,Graduate,Semiurban,2971,2791,104,Good,Accepted,0,Not-Self-Employed,12928,5762
+Male,Yes,Graduate,Semiurban,7578,1010,104,Good,Accepted,0,Not-Self-Employed,43928,8588
+Male,Yes,Graduate,Semiurban,6250,0,104,Good,Accepted,0,Not-Self-Employed,62464,6250
+Male,Yes,Graduate,Rural,3250,0,104,Good,Rejected,0,Not-Self-Employed,38928,3250
+Male,Yes,Not Graduate,Urban,4735,0,104,Good,Rejected,0,Self-Employed,6928,4735
+Male,Yes,Graduate,Semiurban,6250,1695,104,Good,Accepted,2,Not-Self-Employed,13392,7945
+Male,No,Graduate,Semiurban,4758,0,224,Good,Accepted,0,Not-Self-Employed,26928,4758
+Male,No,Graduate,Rural,6400,0,104,Good,Accepted,0,Self-Employed,3392,6400
+Male,Yes,Graduate,Semiurban,2491,2054,104,Good,Accepted,1,Not-Self-Employed,38464,4545
+Male,Yes,Graduate,Rural,3716,0,180,Good,Accepted,0,Not-Self-Employed,42000,3716
+Male,No,Not Graduate,Rural,3189,2598,104,Good,Accepted,0,Not-Self-Employed,54464,5787
+Female,No,Graduate,Semiurban,8333,0,104,Good,Accepted,0,Not-Self-Employed,17856,8333
+Male,Yes,Graduate,Semiurban,3155,1779,104,Good,Accepted,1,Not-Self-Employed,8928,4934
+Male,Yes,Graduate,Rural,5500,1260,104,Good,Accepted,1,Not-Self-Employed,38928,6760
+Female,No,Graduate,Rural,3812,0,104,Good,Accepted,1,Not-Self-Employed,46464,3812
+Male,Yes,Graduate,Semiurban,3315,0,104,Good,Accepted,1,Not-Self-Employed,30464,3315
+Male,Yes,Graduate,Rural,5819,5000,104,Good,Accepted,2,Not-Self-Employed,54464,10819
+Male,Yes,Not Graduate,Urban,2510,1983,180,Good,Rejected,1,Not-Self-Employed,8928,4493
+Male,No,Graduate,Urban,2965,5701,60,Good,Accepted,0,Not-Self-Employed,23928,8666
+Male,Yes,Graduate,Rural,6250,1300,104,Good,Accepted,2,Self-Employed,42464,7550
+Male,Yes,Not Graduate,Semiurban,3406,4417,104,Good,Accepted,0,Not-Self-Employed,57464,7823
+Male,No,Graduate,Urban,6050,4333,180,Good,Rejected,0,Self-Employed,54464,10383
+Male,Yes,Graduate,Urban,9703,0,104,Good,Accepted,2,Not-Self-Employed,46464,9703
+Male,Yes,Not Graduate,Urban,6608,0,180,Good,Accepted,1,Not-Self-Employed,5928,6608
+Male,Yes,Graduate,Semiurban,2882,1843,224,Good,Accepted,1,Not-Self-Employed,57464,4725
+Male,Yes,Graduate,Urban,1809,1868,104,Good,Accepted,0,Not-Self-Employed,24464,3677
+Male,Yes,Not Graduate,Semiurban,1668,3890,104,Bad,Rejected,0,Not-Self-Employed,4392,5558
+Female,No,Graduate,Urban,3427,0,104,Good,Rejected,2,Not-Self-Employed,6928,3427
+Male,No,Not Graduate,Rural,2583,2167,104,Good,Accepted,0,Self-Employed,38464,4750
+Male,Yes,Not Graduate,Semiurban,2661,7101,180,Good,Accepted,1,Not-Self-Employed,16856,9762
+Male,No,Graduate,Urban,16250,0,104,Bad,Rejected,0,Self-Employed,60928,16250
+Female,No,Graduate,Rural,3083,0,104,Good,Accepted,3,Not-Self-Employed,58392,3083
+Male,No,Not Graduate,Rural,6045,0,104,Bad,Rejected,0,Not-Self-Employed,49464,6045
+Male,Yes,Graduate,Urban,5250,0,104,Good,Rejected,3,Not-Self-Employed,28464,5250
+Male,Yes,Graduate,Rural,14683,2100,104,Good,Rejected,0,Not-Self-Employed,41856,16783
+Male,No,Graduate,Semiurban,2060,2209,104,Good,Accepted,0,Not-Self-Employed,2928,4269
+Female,No,Graduate,Semiurban,3481,0,36,Good,Rejected,1,Not-Self-Employed,23928,3481
+Female,No,Graduate,Rural,7200,0,104,Good,Accepted,0,Not-Self-Employed,54464,7200
+Male,No,Graduate,Semiurban,5166,0,104,Good,Accepted,0,Self-Employed,62464,5166
+Male,No,Graduate,Rural,4095,3447,104,Good,Accepted,0,Not-Self-Employed,19928,7542
+Male,Yes,Graduate,Semiurban,4708,1387,104,Good,Accepted,2,Not-Self-Employed,18928,6095
+Male,Yes,Graduate,Urban,4333,1811,104,Bad,Accepted,3,Not-Self-Employed,28928,6144
+Female,No,Graduate,Rural,3418,0,104,Good,Rejected,0,Not-Self-Employed,3928,3418
+Female,No,Graduate,Urban,2876,1560,104,Good,Accepted,1,Not-Self-Employed,24464,4436
+Female,No,Graduate,Urban,3237,0,104,Good,Accepted,0,Not-Self-Employed,30000,3237
+Male,Yes,Graduate,Urban,11146,0,104,Good,Accepted,0,Not-Self-Employed,4928,11146
+Male,No,Graduate,Rural,2833,1857,104,Good,Accepted,0,Not-Self-Employed,60464,4690
+Male,Yes,Graduate,Semiurban,2620,2223,104,Good,Accepted,0,Not-Self-Employed,18928,4843
+Male,Yes,Graduate,Semiurban,3900,0,104,Good,Accepted,2,Not-Self-Employed,24464,3900
+Male,Yes,Graduate,Semiurban,2750,1842,104,Good,Accepted,1,Not-Self-Employed,49464,4592
+Male,Yes,Graduate,Semiurban,3993,3274,104,Good,Accepted,0,Not-Self-Employed,10392,7267
+Male,Yes,Graduate,Urban,3103,1300,104,Good,Accepted,0,Not-Self-Employed,14464,4403
+Male,Yes,Graduate,Semiurban,14583,0,104,Good,Accepted,0,Not-Self-Employed,42784,14583
+Male,No,Not Graduate,Urban,4053,2426,104,Bad,Rejected,1,Self-Employed,26928,6479
+Male,Yes,Graduate,Semiurban,3927,800,104,Good,Accepted,0,Not-Self-Employed,46464,4727
+Male,Yes,Graduate,Urban,2301,985,180,Good,Accepted,2,Not-Self-Employed,12464,3286
+Female,No,Graduate,Urban,1811,1666,104,Good,Accepted,0,Not-Self-Employed,54000,3477
+Male,No,Graduate,Rural,3158,3053,104,Good,Accepted,0,Not-Self-Employed,23464,6211
+Female,No,Graduate,Semiurban,2600,1717,44,Good,Rejected,0,Self-Employed,33464,4317
+Male,Yes,Graduate,Rural,3704,2000,104,Good,Accepted,0,Not-Self-Employed,54464,5704
+Female,No,Graduate,Semiurban,4124,0,104,Good,Accepted,0,Not-Self-Employed,49464,4124
+Male,No,Graduate,Rural,9508,0,104,Good,Accepted,0,Not-Self-Employed,55928,9508
+Male,Yes,Graduate,Rural,3075,2416,104,Good,Accepted,0,Not-Self-Employed,7928,5491
+Male,Yes,Graduate,Semiurban,4400,0,104,Bad,Rejected,2,Not-Self-Employed,61464,4400
+Male,Yes,Graduate,Urban,3153,1560,104,Good,Accepted,2,Not-Self-Employed,2928,4713
+Female,No,Graduate,Urban,5417,0,224,Bad,Rejected,0,Not-Self-Employed,11928,5417
+Male,Yes,Graduate,Semiurban,2383,3334,104,Good,Accepted,0,Not-Self-Employed,40928,5717
+Male,Yes,Graduate,Urban,4416,1250,104,Good,Accepted,3,Not-Self-Employed,44464,5666
+Male,Yes,Graduate,Semiurban,6875,0,104,Good,Accepted,1,Not-Self-Employed,3392,6875
+Female,Yes,Graduate,Urban,4666,0,104,Good,Accepted,1,Not-Self-Employed,3928,4666
+Female,No,Graduate,Rural,5000,2541,224,Good,Rejected,0,Not-Self-Employed,19928,7541
+Male,Yes,Graduate,Urban,2014,2925,104,Good,Rejected,1,Not-Self-Employed,47464,4939
+Male,Yes,Not Graduate,Urban,1800,2934,104,Bad,Rejected,0,Not-Self-Employed,27464,4734
+Male,Yes,Not Graduate,Semiurban,2875,1750,104,Good,Accepted,0,Not-Self-Employed,39464,4625
+Female,No,Graduate,Rural,5000,0,104,Good,Accepted,0,Not-Self-Employed,928,5000
+Male,Yes,Graduate,Urban,1625,1803,104,Good,Accepted,1,Not-Self-Employed,30464,3428
+Male,No,Graduate,Rural,4000,2500,104,Good,Accepted,0,Not-Self-Employed,8928,6500
+Female,No,Graduate,Rural,3762,1666,104,Good,Accepted,0,Not-Self-Employed,3928,5428
+Female,No,Graduate,Urban,2400,1863,104,Bad,Rejected,0,Not-Self-Employed,38464,4263
+Male,No,Graduate,Rural,20233,0,104,Good,Rejected,0,Not-Self-Employed,21248,20233
+Female,No,Graduate,Semiurban,2917,0,104,Good,Accepted,0,Not-Self-Employed,18464,2917
+Male,No,Not Graduate,Semiurban,2927,2405,104,Good,Accepted,0,Not-Self-Employed,45464,5332
+Female,No,Graduate,Rural,2507,0,104,Good,Accepted,0,Not-Self-Employed,56000,2507
+Unknown,Yes,Graduate,Rural,2473,1843,104,Good,Rejected,0,Not-Self-Employed,27928,4316
+Male,Yes,Not Graduate,Urban,3399,1640,180,Good,Accepted,1,Not-Self-Employed,45464,5039
+Male,Yes,Graduate,Semiurban,3717,0,104,Good,Accepted,2,Not-Self-Employed,54464,3717
+Male,Yes,Graduate,Rural,10000,0,104,Good,Rejected,1,Self-Employed,23928,10000
+Male,Yes,Graduate,Semiurban,2400,2167,104,Good,Accepted,0,Not-Self-Employed,49464,4567
+Male,Yes,Graduate,Semiurban,4342,189,104,Good,Accepted,3,Not-Self-Employed,58464,4531
+Male,Yes,Graduate,Rural,15000,0,104,Good,Accepted,3,Not-Self-Employed,37856,15000
+Male,Yes,Graduate,Rural,8666,4983,104,Bad,Rejected,1,Self-Employed,48320,13649
+Male,No,Graduate,Rural,4917,0,104,Bad,Accepted,0,Not-Self-Employed,64464,4917
+Male,Yes,Graduate,Semiurban,5818,2160,104,Good,Accepted,0,Self-Employed,52928,7978
+Female,Yes,Graduate,Urban,4333,2451,104,Good,Rejected,0,Not-Self-Employed,44464,6784
+Female,No,Graduate,Urban,2500,0,104,Good,Accepted,0,Not-Self-Employed,1464,2500
+Male,No,Graduate,Urban,4384,1793,104,Good,Accepted,1,Not-Self-Employed,51464,6177
+Male,No,Graduate,Semiurban,2935,0,104,Good,Accepted,0,Not-Self-Employed,32464,2935
+Male,No,Graduate,Urban,2833,0,104,Good,Accepted,0,Not-Self-Employed,5464,2833
+Male,Yes,Graduate,Urban,63337,0,180,Good,Accepted,0,Not-Self-Employed,31248,63337
+Unknown,Yes,Graduate,Urban,9833,1833,180,Good,Accepted,1,Self-Employed,50928,11666
+Male,Yes,Graduate,Semiurban,5503,4490,104,Good,Accepted,0,Self-Employed,4464,9993
+Male,Yes,Graduate,Rural,5250,688,104,Good,Accepted,1,Not-Self-Employed,28928,5938
+Male,Yes,Graduate,Rural,2500,4600,104,Good,Accepted,2,Self-Employed,44928,7100
+Female,No,Graduate,Semiurban,4160,0,104,Good,Accepted,0,Not-Self-Employed,5464,4160
+Male,Yes,Not Graduate,Rural,2647,1587,104,Good,Rejected,3,Not-Self-Employed,41928,4234
+Female,No,Graduate,Rural,2378,0,104,Good,Rejected,0,Not-Self-Employed,46000,2378
+Male,Yes,Not Graduate,Urban,4554,1229,104,Good,Accepted,1,Not-Self-Employed,26928,5783
+Male,Yes,Not Graduate,Semiurban,3173,0,104,Good,Accepted,3,Not-Self-Employed,8464,3173
+Male,Yes,Graduate,Rural,2583,2330,104,Good,Accepted,2,Not-Self-Employed,59464,4913
+Male,Yes,Graduate,Semiurban,2499,2458,104,Good,Accepted,0,Not-Self-Employed,28928,4957
+Male,Yes,Not Graduate,Rural,3523,3230,104,Bad,Rejected,0,Not-Self-Employed,20928,6753
+Male,Yes,Not Graduate,Urban,3083,2168,104,Good,Accepted,2,Not-Self-Employed,60464,5251
+Male,Yes,Graduate,Rural,2625,6250,104,Good,Accepted,0,Not-Self-Employed,55928,8875
+Male,Yes,Graduate,Semiurban,9083,0,104,Good,Accepted,0,Not-Self-Employed,31392,9083
+Male,No,Graduate,Rural,8750,4167,104,Good,Rejected,0,Not-Self-Employed,45856,12917
+Male,Yes,Graduate,Rural,2666,2083,104,Good,Accepted,3,Not-Self-Employed,29464,4749
+Female,Yes,Graduate,Rural,5500,0,104,Bad,Rejected,0,Self-Employed,39464,5500
+Female,Yes,Graduate,Semiurban,2423,505,104,Good,Accepted,0,Not-Self-Employed,64464,2928
+Female,No,Graduate,Urban,3813,0,180,Good,Accepted,0,Not-Self-Employed,50464,3813
+Male,Yes,Graduate,Rural,8333,3167,104,Good,Accepted,2,Not-Self-Employed,33928,11500
+Male,Yes,Graduate,Urban,3875,0,104,Good,Rejected,1,Not-Self-Employed,1464,3875
+Male,Yes,Not Graduate,Urban,3000,1666,224,Bad,Rejected,0,Not-Self-Employed,34464,4666
+Male,Yes,Graduate,Semiurban,5167,3167,104,Good,Accepted,3,Not-Self-Employed,3392,8334
+Female,No,Graduate,Semiurban,4723,0,104,Good,Rejected,1,Not-Self-Employed,15464,4723
+Male,Yes,Graduate,Semiurban,5000,3667,104,Good,Accepted,2,Not-Self-Employed,39392,8667
+Male,Yes,Graduate,Urban,4750,2333,104,Good,Accepted,0,Not-Self-Employed,64464,7083
+Male,No,Graduate,Rural,6822,0,104,Good,Accepted,0,Self-Employed,9928,6822
+Male,No,Not Graduate,Rural,6216,0,104,Good,Rejected,0,Not-Self-Employed,1928,6216
+Male,No,Graduate,Semiurban,2500,0,224,Good,Rejected,0,Not-Self-Employed,30464,2500
+Male,No,Graduate,Rural,5124,0,104,Bad,Rejected,0,Not-Self-Employed,58464,5124
+Male,Yes,Graduate,Semiurban,6325,0,104,Good,Accepted,1,Not-Self-Employed,43928,6325
+Male,Yes,Graduate,Rural,19730,5266,104,Good,Rejected,0,Not-Self-Employed,45712,24996
+Female,No,Graduate,Semiurban,15759,0,104,Good,Accepted,0,Self-Employed,55000,15759
+Male,Yes,Graduate,Semiurban,5185,0,104,Good,Accepted,2,Not-Self-Employed,23928,5185
+Male,Yes,Graduate,Rural,9323,7873,44,Good,Accepted,2,Self-Employed,52320,17196
+Male,No,Graduate,Urban,3062,1987,180,Bad,Rejected,1,Not-Self-Employed,45464,5049
+Female,No,Graduate,Urban,2764,1459,104,Good,Accepted,0,Not-Self-Employed,44464,4223
+Male,Yes,Graduate,Urban,4817,923,180,Good,Accepted,0,Not-Self-Employed,54464,5740
+Male,Yes,Graduate,Rural,8750,4996,104,Good,Accepted,3,Not-Self-Employed,64464,13746
+Male,No,Graduate,Urban,3069,0,224,Good,Rejected,0,Not-Self-Employed,5464,3069
+Male,Yes,Graduate,Urban,5391,0,104,Good,Accepted,2,Not-Self-Employed,64464,5391
+Male,Yes,Graduate,Semiurban,3333,2500,104,Good,Accepted,0,Not-Self-Employed,62464,5833
+Male,No,Graduate,Semiurban,5941,4232,104,Good,Accepted,0,Not-Self-Employed,33856,10173
+Female,No,Graduate,Urban,6000,0,104,Good,Accepted,0,Not-Self-Employed,24928,6000
+Male,No,Graduate,Urban,7167,0,104,Good,Accepted,0,Self-Employed,62464,7167
+Male,Yes,Graduate,Urban,4566,0,104,Good,Rejected,2,Not-Self-Employed,34464,4566
+Male,No,Graduate,Urban,3667,0,180,Good,Accepted,1,Not-Self-Employed,47464,3667
+Male,No,Not Graduate,Semiurban,2346,1600,104,Good,Accepted,0,Not-Self-Employed,928,3946
+Male,Yes,Graduate,Urban,2333,2417,104,Good,Accepted,0,Not-Self-Employed,4928,4750
+Male,Yes,Graduate,Rural,5488,0,104,Good,Accepted,0,Not-Self-Employed,59464,5488
+Male,No,Graduate,Rural,9167,0,104,Good,Accepted,3,Not-Self-Employed,53928,9167
+Male,Yes,Graduate,Rural,9504,0,104,Good,Accepted,3,Not-Self-Employed,12856,9504
+Male,Yes,Not Graduate,Semiurban,1993,1625,180,Good,Accepted,2,Not-Self-Employed,47464,3618
+Male,Yes,Graduate,Urban,3100,1400,104,Good,Accepted,2,Not-Self-Employed,47464,4500
+Female,No,Graduate,Urban,3180,0,104,Bad,Rejected,0,Not-Self-Employed,5464,3180
+Male,Yes,Graduate,Urban,3033,1459,104,Good,Accepted,0,Not-Self-Employed,29464,4492
+Male,No,Not Graduate,Rural,3902,1666,104,Good,Accepted,0,Not-Self-Employed,43464,5568
+Female,No,Graduate,Semiurban,1500,1800,104,Bad,Rejected,0,Not-Self-Employed,37464,3300
+Male,Yes,Not Graduate,Urban,2889,0,180,Bad,Rejected,2,Not-Self-Employed,45000,2889
+Male,No,Not Graduate,Rural,2755,0,44,Good,Rejected,0,Not-Self-Employed,65000,2755
+Male,No,Graduate,Semiurban,2500,20000,104,Good,Accepted,0,Not-Self-Employed,37464,22500
+Female,No,Not Graduate,Semiurban,1963,0,104,Good,Accepted,0,Not-Self-Employed,53000,1963
+Female,No,Graduate,Rural,7441,0,104,Good,Rejected,0,Self-Employed,62928,7441
+Female,No,Graduate,Semiurban,4547,0,104,Good,Accepted,0,Not-Self-Employed,49464,4547
+Male,Yes,Not Graduate,Urban,2167,2400,104,Good,Accepted,0,Not-Self-Employed,49464,4567
+Female,No,Not Graduate,Rural,2213,0,104,Good,Accepted,0,Not-Self-Employed,464,2213
+Male,Yes,Graduate,Semiurban,8300,0,44,Bad,Rejected,1,Not-Self-Employed,20928,8300
+Male,Yes,Graduate,Rural,15464,0,104,Bad,Rejected,3,Not-Self-Employed,32320,15464
+Female,No,Not Graduate,Semiurban,3867,0,104,Good,Rejected,1,Self-Employed,62000,3867
+Male,Yes,Not Graduate,Rural,6096,0,104,Bad,Rejected,0,Not-Self-Employed,21392,6096
+Male,Yes,Not Graduate,Rural,2253,2033,104,Good,Accepted,0,Not-Self-Employed,44464,4286
+Female,Yes,Not Graduate,Semiurban,2149,3237,104,Bad,Rejected,0,Not-Self-Employed,46928,5386
+Female,No,Graduate,Urban,2995,0,104,Good,Accepted,0,Not-Self-Employed,60000,2995
+Female,No,Graduate,Urban,2600,0,104,Good,Rejected,1,Not-Self-Employed,28928,2600
+Male,Yes,Graduate,Urban,1600,20000,104,Good,Rejected,2,Self-Employed,42392,21600
+Male,Yes,Graduate,Rural,1025,2773,104,Good,Accepted,0,Not-Self-Employed,46464,3798
+Male,Yes,Graduate,Semiurban,3246,1417,104,Good,Accepted,0,Not-Self-Employed,6928,4663
+Male,Yes,Graduate,Rural,5829,0,104,Good,Accepted,0,Not-Self-Employed,6928,5829
+Female,No,Not Graduate,Urban,2720,0,104,Bad,Rejected,0,Not-Self-Employed,14464,2720
+Male,Yes,Graduate,Urban,1820,1719,104,Good,Accepted,0,Not-Self-Employed,34464,3539
+Male,Yes,Graduate,Urban,7250,1667,104,Bad,Rejected,1,Not-Self-Employed,44464,8917
+Male,Yes,Graduate,Semiurban,14880,0,104,Good,Accepted,0,Not-Self-Employed,30464,14880
+Male,Yes,Graduate,Rural,2666,4300,104,Good,Accepted,0,Not-Self-Employed,55464,6966
+Female,No,Not Graduate,Rural,4606,0,104,Good,Rejected,1,Not-Self-Employed,15464,4606
+Male,Yes,Graduate,Semiurban,5935,0,104,Good,Accepted,2,Not-Self-Employed,1928,5935
+Male,Yes,Graduate,Rural,2920,16,104,Good,Accepted,0,Not-Self-Employed,21464,2936
+Male,No,Not Graduate,Urban,2717,0,180,Good,Accepted,0,Not-Self-Employed,60000,2717
+Female,No,Graduate,Semiurban,8624,0,104,Good,Accepted,1,Self-Employed,18928,8624
+Male,No,Graduate,Rural,6500,0,104,Bad,Rejected,0,Not-Self-Employed,39464,6500
+Male,No,Graduate,Semiurban,12876,0,104,Good,Accepted,0,Not-Self-Employed,11784,12876
+Male,Yes,Graduate,Semiurban,2425,2340,104,Good,Accepted,0,Not-Self-Employed,11928,4765
+Male,No,Graduate,Urban,3750,0,104,Good,Accepted,0,Not-Self-Employed,34464,3750
+Male,No,Graduate,Semiurban,1926,1851,104,Good,Accepted,0,Not-Self-Employed,50000,3777
+Male,No,Graduate,Urban,10416,0,104,Bad,Rejected,0,Self-Employed,55928,10416
+Female,Yes,Not Graduate,Rural,7142,0,104,Good,Accepted,0,Self-Employed,6928,7142
+Male,No,Graduate,Semiurban,3660,5064,104,Good,Accepted,0,Not-Self-Employed,55928,8724
+Male,Yes,Graduate,Rural,7901,1833,104,Good,Accepted,0,Not-Self-Employed,48928,9734
+Male,No,Not Graduate,Semiurban,4707,1993,104,Good,Accepted,3,Not-Self-Employed,16928,6700
+Male,No,Graduate,Semiurban,37719,0,104,Good,Accepted,1,Not-Self-Employed,20928,37719
+Male,Yes,Graduate,Rural,3466,1210,104,Good,Accepted,1,Self-Employed,64464,4676
+Male,Yes,Not Graduate,Rural,4652,0,104,Good,Accepted,2,Not-Self-Employed,44464,4652
+Male,Yes,Graduate,Rural,3539,1376,104,Good,Rejected,0,Not-Self-Employed,55000,4915
+Male,Yes,Graduate,Rural,3340,1710,104,Bad,Rejected,2,Not-Self-Employed,18928,5050
+Male,Yes,Not Graduate,Rural,2309,1255,104,Bad,Rejected,2,Not-Self-Employed,59464,3564
+Male,Yes,Graduate,Rural,3948,1733,104,Bad,Rejected,0,Not-Self-Employed,17928,5681
+Male,Yes,Graduate,Rural,2483,2466,180,Bad,Accepted,0,Not-Self-Employed,24464,4949
+Male,No,Graduate,Semiurban,7085,0,104,Good,Accepted,0,Self-Employed,18464,7085
+Male,Yes,Graduate,Semiurban,3859,0,104,Good,Accepted,2,Not-Self-Employed,30464,3859
+Male,Yes,Graduate,Urban,4301,0,104,Good,Accepted,0,Not-Self-Employed,52464,4301
+Male,Yes,Graduate,Urban,3708,2569,104,Good,Rejected,0,Not-Self-Employed,41928,6277
+Male,No,Graduate,Rural,4354,0,104,Good,Accepted,2,Not-Self-Employed,4928,4354
+Male,Yes,Graduate,Semiurban,8334,0,104,Good,Rejected,0,Not-Self-Employed,28928,8334
+Male,Yes,Graduate,Urban,7740,0,180,Good,Accepted,3,Not-Self-Employed,62464,7740
+Male,Yes,Graduate,Rural,3015,2188,104,Good,Accepted,0,Not-Self-Employed,21928,5203
+Female,No,Not Graduate,Semiurban,5191,0,104,Good,Accepted,1,Not-Self-Employed,928,5191
+Male,No,Graduate,Semiurban,4166,0,104,Bad,Rejected,0,Not-Self-Employed,32464,4166
+Male,No,Graduate,Rural,6000,0,104,Good,Accepted,0,Not-Self-Employed,8928,6000
+Male,Yes,Not Graduate,Urban,2947,1664,180,Bad,Rejected,3,Not-Self-Employed,4464,4611
+Unknown,Yes,Graduate,Semiurban,16692,0,104,Good,Accepted,0,Not-Self-Employed,44464,16692
+Female,Yes,Not Graduate,Semiurban,210,2917,104,Good,Accepted,2,Not-Self-Employed,32464,3127
+Male,Yes,Graduate,Urban,4333,2451,104,Good,Rejected,0,Not-Self-Employed,44464,6784
+Male,Yes,Graduate,Semiurban,3450,2079,104,Good,Accepted,1,Self-Employed,30928,5529
+Male,Yes,Not Graduate,Rural,2653,1500,180,Bad,Rejected,1,Not-Self-Employed,47464,4153
+Male,Yes,Graduate,Semiurban,4691,0,104,Good,Accepted,3,Not-Self-Employed,34464,4691
+Male,No,Graduate,Rural,5532,4648,104,Good,Accepted,2,Not-Self-Employed,30928,10180
+Male,Yes,Graduate,Rural,16525,1014,104,Good,Accepted,2,Self-Employed,18928,17539
+Male,Yes,Graduate,Semiurban,6700,1750,44,Good,Accepted,2,Not-Self-Employed,33392,8450
+Unknown,Yes,Graduate,Semiurban,2873,1872,104,Bad,Rejected,2,Not-Self-Employed,928,4745
+Male,Yes,Graduate,Semiurban,16667,2250,104,Good,Accepted,1,Self-Employed,20464,18917
+Female,No,Not Graduate,Rural,4350,0,104,Good,Accepted,0,Not-Self-Employed,22928,4350
+Male,Yes,Not Graduate,Rural,3095,0,104,Good,Accepted,3,Not-Self-Employed,47464,3095
+Male,Yes,Graduate,Semiurban,2083,3150,104,Good,Accepted,0,Not-Self-Employed,62464,5233
+Male,Yes,Graduate,Semiurban,10833,0,104,Good,Accepted,0,Not-Self-Employed,37392,10833
+Male,Yes,Graduate,Semiurban,8333,0,104,Good,Accepted,2,Not-Self-Employed,49392,8333
+Male,Yes,Not Graduate,Rural,1958,2436,104,Good,Accepted,1,Not-Self-Employed,65464,4394
+Male,No,Graduate,Rural,3547,0,104,Bad,Rejected,2,Not-Self-Employed,14464,3547
+Male,Yes,Graduate,Urban,18333,0,104,Good,Rejected,1,Not-Self-Employed,41248,18333
+Male,Yes,Graduate,Semiurban,4583,2083,104,Good,Accepted,2,Self-Employed,28928,6666
+Male,No,Graduate,Urban,2435,0,104,Good,Rejected,0,Not-Self-Employed,9464,2435
+Male,No,Not Graduate,Rural,3691,0,104,Good,Accepted,0,Not-Self-Employed,44464,3691
+Female,No,Not Graduate,Semiurban,17263,0,104,Good,Accepted,0,Self-Employed,28392,17263
+Male,Yes,Graduate,Rural,3597,2157,104,Bad,Rejected,0,Not-Self-Employed,53464,5754
+Female,Yes,Graduate,Semiurban,3326,913,84,Good,Accepted,1,Not-Self-Employed,39464,4239
+Male,Yes,Not Graduate,Rural,2600,1700,104,Good,Accepted,0,Not-Self-Employed,41464,4300
+Male,Yes,Graduate,Semiurban,2895,0,104,Good,Accepted,1,Self-Employed,29464,2895
+Male,No,Graduate,Rural,6283,4416,104,Bad,Rejected,0,Not-Self-Employed,12392,10699
+Female,No,Graduate,Rural,645,3683,224,Good,Accepted,0,Not-Self-Employed,47464,4328
+Female,No,Graduate,Semiurban,3159,0,104,Good,Accepted,0,Not-Self-Employed,34464,3159
+Male,Yes,Graduate,Semiurban,4865,5624,104,Good,Accepted,2,Not-Self-Employed,11392,10489
+Male,Yes,Not Graduate,Semiurban,3814,1483,44,Good,Accepted,0,Not-Self-Employed,58464,5297
+Male,Yes,Graduate,Rural,3510,4416,104,Good,Accepted,2,Not-Self-Employed,46392,7926
+Unknown,No,Graduate,Urban,3583,0,104,Good,Rejected,0,Not-Self-Employed,30464,3583
+Male,Yes,Graduate,Urban,2479,3013,104,Good,Accepted,0,Self-Employed,56928,5492
+Female,No,Graduate,Urban,13262,0,104,Good,Accepted,1,Not-Self-Employed,40000,13262
+Male,No,Not Graduate,Rural,3598,1287,104,Good,Rejected,0,Not-Self-Employed,34464,4885
+Male,Yes,Graduate,Semiurban,6065,2004,104,Good,Accepted,1,Not-Self-Employed,53392,8069
+Male,Yes,Graduate,Urban,3283,2035,104,Good,Accepted,2,Not-Self-Employed,16928,5318
+Male,Yes,Graduate,Semiurban,2130,6666,180,Good,Rejected,0,Not-Self-Employed,4464,8796
+Male,No,Graduate,Rural,5815,3666,104,Good,Rejected,0,Not-Self-Employed,48856,9481
+Male,Yes,Graduate,Rural,3466,3428,104,Good,Accepted,3,Not-Self-Employed,18928,6894
+Female,Yes,Graduate,Semiurban,2031,1632,224,Good,Accepted,2,Not-Self-Employed,47464,3663
+Male,Yes,Not Graduate,Semiurban,3074,1800,104,Bad,Rejected,0,Not-Self-Employed,57464,4874
+Male,No,Graduate,Semiurban,4683,1915,104,Good,Rejected,0,Not-Self-Employed,53928,6598
+Female,No,Not Graduate,Rural,3400,0,104,Good,Rejected,0,Not-Self-Employed,29464,3400
+Male,Yes,Not Graduate,Semiurban,2192,1742,104,Good,Accepted,2,Not-Self-Employed,45000,3934
+Male,No,Graduate,Semiurban,2500,0,104,Good,Accepted,0,Not-Self-Employed,55000,2500
+Male,Yes,Graduate,Rural,5677,1424,104,Good,Accepted,3,Self-Employed,34464,7101
+Male,Yes,Graduate,Rural,7948,7166,104,Good,Accepted,2,Self-Employed,21248,15114
+Male,Yes,Graduate,Rural,17500,0,104,Good,Accepted,2,Self-Employed,6784,17500
+Male,Yes,Graduate,Semiurban,3775,0,104,Good,Accepted,0,Not-Self-Employed,44464,3775
+Male,Yes,Not Graduate,Semiurban,5285,1430,104,Bad,Accepted,1,Not-Self-Employed,29928,6715
+Male,No,Not Graduate,Semiurban,2679,1302,104,Good,Accepted,1,Not-Self-Employed,28464,3981
+Male,No,Not Graduate,Semiurban,6783,0,104,Good,Accepted,0,Not-Self-Employed,64464,6783
+Male,Yes,Graduate,Urban,4281,0,104,Good,Accepted,3,Not-Self-Employed,34464,4281
+Male,No,Graduate,Rural,3588,0,104,Bad,Rejected,2,Not-Self-Employed,44464,3588
+Female,No,Not Graduate,Urban,18165,0,104,Good,Accepted,0,Self-Employed,59464,18165
+Male,No,Not Graduate,Rural,2550,2042,104,Good,Accepted,0,Not-Self-Employed,60464,4592
+Male,Yes,Graduate,Urban,6133,3906,104,Good,Accepted,0,Not-Self-Employed,61856,10039
+Male,No,Graduate,Semiurban,3617,0,104,Good,Accepted,2,Not-Self-Employed,41464,3617
+Male,Yes,Not Graduate,Rural,2917,536,104,Good,Rejected,0,Not-Self-Employed,464,3453
+Male,Yes,Graduate,Rural,6417,0,180,Good,Accepted,3,Not-Self-Employed,25928,6417
+Female,Yes,Graduate,Semiurban,4608,2845,180,Good,Accepted,1,Not-Self-Employed,8928,7453
+Female,No,Graduate,Semiurban,2138,0,104,Bad,Rejected,0,Not-Self-Employed,33464,2138
+Female,No,Graduate,Semiurban,3652,0,104,Good,Accepted,1,Not-Self-Employed,29464,3652
+Male,Yes,Not Graduate,Urban,2239,2524,104,Good,Accepted,1,Not-Self-Employed,62464,4763
+Male,Yes,Graduate,Rural,2768,1950,104,Good,Accepted,0,Not-Self-Employed,23928,4718
+Male,No,Not Graduate,Semiurban,3358,0,36,Good,Rejected,0,Not-Self-Employed,14464,3358
+Male,No,Graduate,Rural,2526,1783,104,Good,Accepted,0,Not-Self-Employed,13928,4309
+Female,No,Graduate,Semiurban,5000,0,104,Bad,Rejected,0,Not-Self-Employed,37464,5000
+Male,Yes,Graduate,Rural,2785,2016,104,Good,Accepted,0,Not-Self-Employed,44464,4801
+Male,Yes,Graduate,Urban,3333,3250,104,Good,Accepted,1,Not-Self-Employed,26928,6583
+Male,Yes,Not Graduate,Urban,2454,2333,104,Bad,Rejected,0,Not-Self-Employed,49928,4787
+Male,Yes,Graduate,Rural,3593,4266,180,Bad,Rejected,0,Not-Self-Employed,928,7859
+Male,Yes,Graduate,Semiurban,5468,1032,104,Good,Accepted,1,Not-Self-Employed,26000,6500
+Male,Yes,Graduate,Semiurban,10139,0,104,Good,Accepted,3,Self-Employed,63392,10139
+Male,Yes,Graduate,Semiurban,3887,2669,104,Good,Accepted,0,Not-Self-Employed,30928,6556
+Female,Yes,Graduate,Semiurban,4180,2306,104,Good,Accepted,0,Not-Self-Employed,50928,6486
+Male,Yes,Not Graduate,Semiurban,3675,242,104,Good,Accepted,2,Not-Self-Employed,42464,3917
+Female,Yes,Graduate,Semiurban,19484,0,104,Good,Accepted,1,Self-Employed,10176,19484
+Male,Yes,Graduate,Rural,5923,2054,104,Good,Accepted,0,Not-Self-Employed,14392,7977
+Male,No,Not Graduate,Semiurban,5800,0,104,Good,Accepted,0,Self-Employed,928,5800
+Male,Yes,Graduate,Urban,8799,0,104,Bad,Rejected,2,Not-Self-Employed,61392,8799
+Male,No,Graduate,Urban,3333,0,104,Good,Accepted,0,Not-Self-Employed,4464,3333
+Male,Yes,Graduate,Rural,3400,2500,104,Bad,Rejected,3,Not-Self-Employed,57464,5900
+Female,No,Graduate,Urban,2378,0,104,Good,Rejected,0,Not-Self-Employed,9000,2378
+Male,Yes,Graduate,Urban,3166,2064,104,Bad,Rejected,0,Not-Self-Employed,38464,5230
+Male,Yes,Graduate,Urban,3417,1750,104,Good,Accepted,1,Not-Self-Employed,54928,5167
+Male,Yes,Graduate,Urban,5116,1451,104,Bad,Rejected,0,Not-Self-Employed,33928,6567
+Male,Yes,Graduate,Urban,16666,0,104,Good,Accepted,2,Not-Self-Employed,12856,16666
+Male,Yes,Not Graduate,Semiurban,6125,1625,224,Good,Rejected,2,Not-Self-Employed,55928,7750
+Male,Yes,Graduate,Semiurban,6406,0,104,Good,Rejected,3,Not-Self-Employed,18928,6406
+Male,Yes,Graduate,Urban,3159,461,84,Good,Accepted,2,Not-Self-Employed,42464,3620
+Unknown,Yes,Graduate,Semiurban,3087,2210,104,Bad,Rejected,0,Not-Self-Employed,4928,5297
+Male,No,Graduate,Urban,3229,2739,104,Good,Accepted,0,Not-Self-Employed,44464,5968
+Male,Yes,Graduate,Rural,1782,2232,104,Good,Accepted,1,Not-Self-Employed,41464,4014
+Male,No,Graduate,Urban,3182,2917,104,Good,Accepted,0,Not-Self-Employed,29928,6099
+Male,Yes,Graduate,Semiurban,6540,0,104,Good,Accepted,2,Not-Self-Employed,8392,6540
+Male,No,Graduate,Urban,1836,33837,104,Good,Rejected,0,Not-Self-Employed,24464,35673
+Female,Yes,Graduate,Semiurban,3166,0,104,Good,Accepted,0,Not-Self-Employed,36000,3166
+Male,Yes,Graduate,Rural,2787,1917,104,Bad,Rejected,1,Not-Self-Employed,14928,4704
+Male,Yes,Graduate,Rural,4283,3000,84,Good,Rejected,1,Not-Self-Employed,40928,7283
+Male,Yes,Graduate,Urban,2297,1522,104,Good,Accepted,0,Not-Self-Employed,38464,3819
+Female,No,Not Graduate,Semiurban,2165,0,104,Good,Accepted,0,Not-Self-Employed,4464,2165
+Unknown,No,Graduate,Semiurban,4750,0,104,Good,Accepted,0,Not-Self-Employed,28464,4750
+Male,Yes,Graduate,Semiurban,2726,0,104,Bad,Rejected,2,Self-Employed,40464,2726
+Male,Yes,Graduate,Semiurban,3000,3416,180,Good,Accepted,0,Not-Self-Employed,56000,6416
+Male,Yes,Graduate,Semiurban,6000,0,240,Good,Rejected,2,Self-Employed,8392,6000
+Unknown,No,Graduate,Semiurban,9357,0,104,Good,Accepted,3,Self-Employed,29856,9357
+Male,Yes,Graduate,Rural,3859,3300,180,Good,Accepted,0,Not-Self-Employed,10928,7159
+Male,Yes,Graduate,Urban,16120,0,104,Good,Accepted,0,Self-Employed,63392,16120
+Male,No,Not Graduate,Rural,3833,0,104,Good,Accepted,0,Not-Self-Employed,44464,3833
+Male,Yes,Not Graduate,Rural,6383,1000,104,Good,Rejected,2,Self-Employed,55928,7383
+Male,No,Graduate,Semiurban,2987,0,104,Bad,Rejected,0,Not-Self-Employed,22464,2987
+Male,Yes,Graduate,Rural,9963,0,104,Good,Accepted,0,Self-Employed,48928,9963
+Male,Yes,Graduate,Urban,5780,0,104,Good,Accepted,2,Not-Self-Employed,60928,5780
+Male,Yes,Not Graduate,Rural,2894,2792,104,Good,Accepted,0,Not-Self-Employed,23928,5686
+Male,Yes,Graduate,Urban,5703,0,104,Good,Accepted,3,Not-Self-Employed,62464,5703
+Male,No,Graduate,Rural,3676,4301,104,Good,Accepted,0,Not-Self-Employed,40928,7977
+Female,Yes,Graduate,Semiurban,12000,0,104,Good,Accepted,1,Not-Self-Employed,37248,12000
+Male,Yes,Graduate,Semiurban,3400,2500,104,Good,Accepted,1,Not-Self-Employed,41928,5900
+Male,Yes,Not Graduate,Rural,3987,1411,104,Good,Accepted,2,Not-Self-Employed,25928,5398
+Male,Yes,Graduate,Rural,3232,1950,104,Good,Accepted,0,Not-Self-Employed,42464,5182
+Female,No,Graduate,Rural,2900,0,104,Good,Accepted,0,Not-Self-Employed,5464,2900
+Male,Yes,Graduate,Rural,4106,0,180,Good,Accepted,3,Not-Self-Employed,40000,4106
+Male,Yes,Graduate,Urban,8072,240,104,Good,Accepted,1,Not-Self-Employed,56392,8312
+Male,Yes,Graduate,Urban,7583,0,104,Good,Accepted,2,Not-Self-Employed,55928,7583
+Female,No,Graduate,Semiurban,4583,0,104,Bad,Rejected,0,Self-Employed,1928,4583

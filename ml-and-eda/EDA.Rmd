@@ -1,0 +1,483 @@
+---
+title: "Loan data EDA"
+author: "Muhammed Ahmed Abd Al ALeam"
+date: "2023-09-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Notebook Description & Setup
+
+This is an analysis for the loan data-set on Kaggle this EDA notebook is done on the data after the data cleaning see more in the cleaning notebook here we will answer those questions below and also any question that comes in my mind or if got inspired by any viz in this notebook.
+
+**Things we will visualize:**
+
+-   Categorical variables distribution so I can check for data bias
+
+-   Correlation pair-plot between all contentious variables
+
+**Questions:**
+
+-   What's the ratio between the people with good credit score who have got their loans accepted & who got not?
+
+-   How much does the credit history wellness affect the probability of getting your loan accepted?
+
+-   Is there any bias of getting loan to any property area or gender in our mock company
+
+-   How often does the company accept the loans per total monthly income groups.
+
+-   How does the loan term correlate with the loan amount and how does this affect the loan status?
+
+```{r results='hide'}
+
+install.packages("hrbrthemes")
+install.packages("psych")
+install.packages("waffle")
+install.packages("ggpubr")
+install.packages("DT")
+install.packages("GGally")
+
+
+library(extrafont)
+library(hrbrthemes)
+library(scales)
+library(reshape2)
+library(ggpubr)
+library(tidyverse)
+library(showtext)
+library(Hmisc)
+library(psych)
+library(waffle)
+library(GGally)
+library(DT)
+
+COLORS <- c('#102542', '#F87060', '#CDD7D6', '#B3A394', '#FFFFFF')
+FONT   <- 20
+PAD    <- 40
+```
+
+```{r}
+df <- read.csv("../data-cleaning/cleaned-data/processsed-data.csv")
+
+datatable(data= df)
+```
+
+```{r}
+summary(df)
+```
+
+# Answering the Questions
+
+## Answer 1
+
+Let's Start with the first question which asks about how does the credit history wellness affect the probability of getting a loan to answer this question will help us know the importance of the **credit history** *(of course it's important but we want to know how is it in our mock company)* we will use **Chi-squared** & **Cramer's V** tests to do this an here's the answer:
+
+```{r}
+contingency_table  <- select(df, Loan_Status,Credit_History) %>%
+  table() %>%
+  as.data.frame() %>%
+  pivot_wider(names_from = Loan_Status, values_from = Freq) %>%
+  column_to_rownames(var= "Credit_History") %>%
+  as.matrix()
+
+p_value            <- chisq.test(contingency_table)$p.value
+chi_squared        <- chisq.test(contingency_table)$statistic
+chi_squared_matrix <- matrix(c(chi_squared, 0, 0, chi_squared),
+                             nrow = 2, ncol = 2, byrow = TRUE )
+
+degrees_of_freedom <- ncol(contingency_table - 1) * nrow(contingency_table - 1)
+chi_critical       <- qchisq(0.05, degrees_of_freedom)
+
+n <- sum(contingency_table)
+k <- ncol(contingency_table)
+r <- nrow(contingency_table)
+
+cramers_v <- sqrt(chi_squared / (n * min(k - 1, r - 1)))
+
+sprintf("The Credit History and the Loan Status have:\n
+Chi critical = %.3f (Chi square should be higher to reject H0)
+P-Value= %e (Very low)
+Chi Square = %.3f
+Cramer's V = %.3f\n
+Which means moderate levels of relationship and we can use those numbers as a standard to compare between them to other months's because those values alone are useless.",
+    chi_critical,  p_value, chi_squared, cramers_v) %>%
+  cat()
+```
+
+## Answer 2
+
+And here's the **Second** question which asks
+
+> What's the ratio between the people with good credit score who have got their loans accepted & who got not?
+
+which will show us if there are any hidden problems we should investigate because the higher this number the more there are hidden problems we should dive through
+
+```{r fig.height= 5}
+
+chart_data <- df[df$Credit_History == 'Good', ]$Loan_Status
+
+counts     <- table(df[df$Credit_History == 'Good', ]$Loan_Status)
+percentage <- (counts / length(chart_data)) * 101
+
+chart_data <- data.frame(loan_state = names(counts),
+                         percentage = percentage) %>% select(-c(percentage.Var1))
+
+chart_data <- chart_data %>%
+  pivot_wider(names_from= loan_state, values_from= percentage.Freq)
+
+
+waffle_chart <- waffle(chart_data, rows= 10,
+       colors= c(COLORS[2], COLORS[3]), 
+       legend_pos= "bottom")
+
+waffle_chart + 
+  labs(title = 'How many people got their Loan Accepted',
+       subtitle= "with Credit history > 70\n") +
+  theme(plot.title = element_text(hjust = .5),
+        plot.subtitle = element_text(hjust = .5))
+```
+
+We can find that about 4/5 of the people who had good credit history got their loan accepted which also means that **20%** of the applications with good credit history is rejected so we should investigate that .
+
+Now **before we go with the third question** we should investigate why there are **20%** of applications with good credit history are rejected so I am going to see how does the [loan amount]{.underline} and the [monthly income]{.underline} differs when the loans are rejected or accepted.
+
+```{r}
+chart_data <- df[df$Credit_History == "Good", ]
+line_y     <- min(chart_data[chart_data$Loan_Status == "Accepted", ]$Total_Monthly_Income)
+
+ggplot(chart_data, aes(x= Loan_Status, y =Total_Monthly_Income)) +
+  
+  geom_jitter(colour= COLORS[3], width= 0.3)                                     +
+  stat_summary(fun= median, geom= "point", shape= 18, size= 5, color= COLORS[2]) +
+  geom_hline(yintercept= line_y, linetype= "dashed", color= COLORS[1], size=1)   +
+  ggtitle("Total Monlthly Income per Accepted & Rejected Loans")                 +
+  labs(y = "Total Monthly Income", x= "", subtitle= "With Credit score > 700")   +
+  scale_y_continuous(n.breaks= 10, labels= function(y) paste0(y/1000, "K"))      + 
+  theme_classic()                                                                +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5))
+```
+
+Oh no we can't find any trend at the data above except when the total monthly income was really low so now we will see if the requested Loan amount has a weird trend in the rejected loans data and if not we will investigate more.
+
+```{r}
+ggplot(chart_data, aes(x= Loan_Status, y =Loan_Amount)) +
+  
+  geom_jitter(colour= COLORS[3], width= 0.3)                                   +
+  stat_summary(fun.y=median, geom="point", shape=15, size=5, color= COLORS[1]) +
+  ggtitle("Loan Amount per Accepted & Rejected Loans")                         +
+  labs(y = "Loan Amount", x= "", subtitle= "With Credit score > 700")          +
+  scale_y_continuous(n.breaks= 10, labels= function(y) paste0(y/1000, "K"))    + 
+  theme_classic()                                                              +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5))
+```
+
+## Answer 3
+
+Now with **Third** question that asks about is there any **bias** to any **category of applications** of getting their loan accepted so we can identify any thing that should be investigated more in the data.
+
+```{r, fig.width=8,fig.height=10}
+# 1st Chart Data
+chart_data <- select(df, Loan_Status, Employment_Type)
+chart_data$Employment_Type <- gsub("-", " ", chart_data$Employment_Type)
+
+chart_data <- table(chart_data) %>%
+  as.data.frame()
+  
+# 2nd Chart Data
+chart_data_filtered <- select(df[df$Credit_History == "Good", ],
+                              Loan_Status, Employment_Type)
+
+chart_data_filtered$Employment_Type <- gsub("-", " ", chart_data_filtered$Employment_Type)
+
+chart_data_filtered <- table(chart_data_filtered) %>%
+  as.data.frame()
+
+
+
+g1 <- ggplot(chart_data, aes(x= Employment_Type, y= Freq, fill= Loan_Status))      +
+  geom_bar(stat= "identity", position= "dodge")                                    +
+  labs(title= "Loan Acceptableness by Employment Type",
+       x= "Employment type",
+       y= "Frequency")                                                             +
+  scale_fill_manual(values= c("Accepted"= COLORS[4], "Rejected"= COLORS[3]))       +
+  theme_classic()                                                                  +
+  theme(plot.title = element_text(hjust = 0.7),
+        plot.margin = margin(t= 20, b= 20, l= 20, r=20))                           +
+  guides(fill=guide_legend(title="Loan Status"))
+
+
+g2 <- ggplot(chart_data_filtered,
+             aes(x= Employment_Type, y= Freq, fill= Loan_Status))                  +
+  geom_bar(stat= "identity", position= "dodge")                                    +
+  labs(title= "Loan Acceptableness by Employment Type",
+       subtitle= "Credit History > 700",
+       x= "Employment type",
+       y= "Frequency")                                                             +
+  scale_fill_manual(values= c("Accepted"= COLORS[1], "Rejected"= COLORS[3]))       +
+  theme_classic()                                                                  +
+  theme(plot.title= element_text(hjust = 0.7),
+        plot.subtitle= element_text(hjust = 0.6),
+        plot.margin = margin(t= 20, b= 20, l= 20, r=20))                           +
+  guides(fill=guide_legend(title="Loan Status"))
+
+
+figure <- ggarrange(g1, g2,
+                    labels = c("Non filtered", "Filtered"),
+                    ncol = 1, nrow = 2)
+
+figure
+```
+
+The chart can show us important thing which is that the loan acceptableness ratio is **higher** in the non-self employed people when we didn't filter the good credit histories only, but when we did the **acceptableness ratio was kinda the** **same** so we can find that employment type and in most cases all of the other categorical features **affect the** **credit history** **not the loan status directly**.
+
+anyways the relationship is really low *(P \< 0.05)* so the relationship may just be a random trend.
+
+```{r}
+non_filtered_data  <-  select(df, Loan_Status, Employment_Type)
+
+filtered_data      <-  select(df, Loan_Status, Employment_Type)[
+  df$Credit_History == "Good", ]
+
+chi_squared            <- chisq.test(non_filtered_data$Loan_Status,
+                                     non_filtered_data$Employment_Type)$statistic
+
+chi_squared_filtered   <- chisq.test(filtered_data$Loan_Status,
+                                     filtered_data$Employment_Type)$statistic
+
+n <- sum(table(non_filtered_data))
+k <- ncol(table(non_filtered_data))
+r <- nrow(table(non_filtered_data))
+
+n_filtered <- sum(table(filtered_data))
+k_filtered <- ncol(table(filtered_data))
+r_filtered <- nrow(table(filtered_data))
+
+cramers_v          <- sqrt(chi_squared / (n * min(k - 1, r - 1)))
+
+cramers_v_filtered <-sqrt(chi_squared_filtered /
+                            (n_filtered * min(k_filtered - 1, r_filtered - 1)))
+
+
+sprintf("The correlation between Employment type and Loan status in general is:
+Cramer's V= %.3f
+
+But when we filter the data for the Good credit histories only we get:
+Cramer's V= %.3f",
+        cramers_v, cramers_v_filtered) %>%
+  cat()
+```
+
+And now with the final thing in this chart I am just going to check if there's any effect from the living environment or the gender on the Loan status using also **Cramer's V**
+
+```{r}
+gender_data   <-  select(df[df$Credit_History == "Good", ], Loan_Status, Gender)
+area_data     <-  select(df[df$Credit_History == "Good", ], Loan_Status, Property_Area)
+married_data  <-  select(df[df$Credit_History == "Good", ], Loan_Status, Married)
+
+gender_chi_squared            <- chisq.test(gender_data$Loan_Status,
+                                            gender_data$Gender)$statistic
+
+area_chi_squared              <- chisq.test(area_data$Loan_Status,
+                                            area_data$Property_Area)$statistic
+                                           
+married_chi_squared           <- chisq.test(married_data$Loan_Status,
+                                            married_data$Married)$statistic
+
+
+
+n_gender <- table(gender_data) %>% sum()
+k_gender <- table(gender_data) %>% ncol()
+r_gender <- table(gender_data) %>% nrow()
+
+gender_cramers_v  <- sqrt(gender_chi_squared /
+                            (n_gender * min(k_gender - 1, r_gender - 1)))
+
+n_area <- table(area_data) %>% sum()
+k_area <- table(area_data) %>% ncol()
+r_area <- table(area_data) %>% nrow()
+
+area_cramers_v <- sqrt(area_chi_squared /
+                         (n_area * min(k_area - 1, r_area - 1)))
+
+n_married <- sum(table(married_data))
+k_married <- ncol(table(married_data))
+r_married <- nrow(table(married_data))
+
+married_cramers_v  <- sqrt(married_chi_squared /
+                             (n_married * min(k_married - 1, r_married - 1)))
+
+sprintf("The Relationship between the Gender and Loan status is:
+Cramer's V= %.3f
+
+The Relationship between the Property area and Loan status is:
+Cramer's V= %.3f
+
+The Relationship between the Marriage and Loan status is:
+Cramer's V= %.3f
+",
+        gender_cramers_v, area_cramers_v, married_cramers_v) %>%
+  cat()
+```
+
+Now we can finally proof that there's a relationship between most of the loan requester data and the\
+loan status but it's not always a direct relationship so at conclusion we now know that:
+
+-   There's a relationship between **(Gender, Property area, Marriage)** and the acceptableness of the loan but it's not always direct sometimes it may affect other variables that lead to the increase of loan acceptableness .
+
+-   The self employment affects the credit history negatively sometimes that leads to decrease in the probability **BUT** this is very rare that makes it just a **random case** because the hypothesis is rejected.
+
+## Answer 4
+
+Finally we finished the long analysis above and now let's investigate smaller question *(the **fourth** one)* which asks: 'How often does the company accept the loans per total monthly income groups?'.
+
+This answer will make us see the relationship between the acceptableness ratio and the total monthly income then we can use this chart to inform our mock users with the safest minimum monthly income to apply.
+
+and if we found that they are don't look like a log function we will need to investigate why.
+
+```{r fig.width=8,fig.height=5}
+
+bin_labels <- c("0 ~ 2.5K", "2.5K ~ 5K", "5K ~ 7.5K", "7.5K ~ 10K", "10K ~ 12.5K",
+                "12.5K ~ 15K", "15K ~ 17.5K", "17.5K ~ 20K", "20K ~ 22.5K",
+                "22.5K ~ 25K", "25K ~ ...")
+
+chart_data <- df %>%
+  mutate(Monthly_Income_Bins = cut(Total_Monthly_Income, labels = bin_labels,
+                                   breaks = c(0, 2500, 5000, 7500, 10000, 12500,
+                                              15000, 17500, 20000, 22500, 25000, Inf)))
+
+chart_data$Loan_Status_New <- ifelse(chart_data$Loan_Status == "Accepted", 100,
+                              ifelse(chart_data$Loan_Status == 'Rejected', 0,
+                                     chart_data$Loan_Status)) %>%
+                              as.numeric()
+
+
+chart_data <- aggregate(Loan_Status_New ~ Monthly_Income_Bins,
+                        data= chart_data, FUN= mean)
+
+ggplot(chart_data, aes(x= Monthly_Income_Bins, y= Loan_Status_New))          +
+  geom_segment(aes(x= Monthly_Income_Bins, xend= Monthly_Income_Bins,
+                    y=0, yend= Loan_Status_New), color= COLORS[3],
+                    size= 1.5)                                               +
+  geom_point(color= COLORS[2], size=7)                                       +
+  theme_classic()                                                            +
+  labs(title= "Loan Acceptance per Monthly Income\n",
+       x= "Monthly Income",
+       y= "Loan Acceptness")                                                 +
+  scale_y_continuous(n.breaks= 10, labels= function(y) paste0(y, "%"))       +
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.x = element_text(angle=90, hjust=1))
+```
+
+As expected there's kinda a log curve but it's broken in two pints which are the `25K ~ Inf` and the `17.5K ~ 20K` mostly because that the records in those high ranges are rare especially that the data is only `600` rows anyways we can find that the sweat spot of the monthly Income is above the `2.5K` also when the monthly Income gets higher the more the requested loan amount gets higher so as you get
+
+higher monthly Income the more your loan acceptance depend on the other variables more.
+
+## Answer 5
+
+Finally with the last question before starting the statistical analysis which asks :
+
+> How does the loan term correlate with the loan amount and how does this affect the loan status?
+
+This question is crucial because it will help us know how does the loan term and the loan amount affect the loan status and if the chart was hard to understand I will use pure statistics.
+
+```{r dpi= 500}
+
+ggplot(df, aes(x= Loan_Amount, y= Loan_Term, color= Loan_Status))               +
+  geom_line(color= COLORS[3])                                                   +
+  geom_point(shape= 18, size= 3)                                                +
+  theme_classic()                                                               +
+  scale_color_manual(values= c("Accepted"= COLORS[1], "Rejected"= COLORS[3]))   +
+  labs(color= "Loan Status", x= "Loan amount", y= "Loan term",
+       title= "Loan amount & term affect on the Loan Acceptance\n")             +
+  scale_x_continuous(n.breaks= 8, labels= function(x) paste0(x/1000, "K"))      +
+  scale_y_continuous(n.breaks= 6, labels= function(y) paste0(y, " Day"))      +
+  theme(legend.position = "bottom", legend.background= element_rect("#f0f0f0"),
+        plot.title = element_text(hjust = 0.5))
+
+```
+
+We can find really important insight with this chart only which is : our mock company usually doesn't accept the loans with **high terms nor low ones** they usually accept loan term of `120 Days` so our mock company should create special loans for people who wants long or short terms even those people are kinda rare and accept wider range of credit histories in terms of long loans.
+
+# Boring statistical charts
+
+those charts may not give us many insights as the ones before but they still important to learn us more about our data and I used them to modify some of the insights above to get more accurate insights.
+
+anyways **I didn't write any insights here** only the charts and they look ugly because R sucks at pair-plots.
+
+```{r dpi=500}
+
+chart_data  <- select(df, Loan_Amount, Loan_Term,
+                      Total_Monthly_Income, Loan_Status)
+
+
+ggpairs(chart_data, columns= 1:3, ggplot2::aes(colour= Loan_Status),
+  upper  = list(continuous= "cor"),
+  lower  = list(continuous= "points", combo = "dot_no_facet", color = "Loan_Status")) +  
+  scale_y_continuous(
+    n.breaks = 5,
+    labels = function(y) {
+      ifelse(y >= 1000, paste0(y / 1000, "K"), y)})                             +
+  scale_x_continuous(
+    n.breaks = 5,
+    labels = function(x) {
+      ifelse(x >= 1000, paste0(x / 1000, "K"), x)})                             +
+  theme_bw()                                                                    +
+  scale_fill_manual  (values = c(COLORS[2], COLORS[3]))                         +
+  scale_color_manual (values = c(COLORS[2], COLORS[3]))                         +
+  labs(title= "Loan Features Correlation Pair plot\n")             +
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggsave("test.png", width = 7, height = 7, dpi = 300)
+```
+
+```{r}
+
+getmode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
+chart_data <- select(df, Married, Education, Property_Area, Loan_Status) %>%
+              tibble::rowid_to_column("Loan_ID")                         %>%
+              melt(id.vars="Loan_ID")                                    %>%    
+              group_by(variable)                                         %>%
+              mutate(max_frequency = value == getmode(value))
+
+
+ggplot(chart_data, aes(Loan_ID, value, fill= max_frequency))             +
+  geom_bar(stat = "identity")                                            +
+  stat_smooth()                                                          +
+  facet_wrap(~variable, , scales = "free")                               +
+  theme_classic()                                                        +
+  labs(x= NULL, y= NULL, title= "Categorical columns distrbution\n")     +
+  scale_fill_manual(values = c(COLORS[3], COLORS[4]))                    +
+  guides(fill = FALSE)                                                   +
+  scale_x_continuous(
+    n.breaks = 5,
+    labels = function(x) {
+      ifelse(x >= 1000, paste0(x / 1000, "K"), x)})                      +
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggsave("test2.png", height= 7, width= 8 , dpi= 300)
+```
+
+## Conclusions
+
+Finally we finished this **EDA** it may not be the best visualization I've ever made any ways now I will share with you some conclusions but firstly read this note first:
+
+> This whole analysis is done on **MOCK DATA** so **DON'T** use the project insights nor the ML in anything related to business nor money at general and anything you'll do with this insights is on your own risk but you **MUSTN'T DO THAT!!**
+
+Now here are some conclusions from our EDA:
+
+-   We can find that the Total monthly income and the loan acceptance ratio have log curve which means that the **Loan acceptance ratio** doesn't get affected after **2.5K** of **Total monthly income.**
+
+-   High loan terms and low terms has slightly more more probability to get rejected.
+
+-   About **20%** of the loans request with good **credit histories** get rejected (mostly because the higher **loan term** or because low or high loan request)
+
+That's enough for the conclusions phase for more analysis go read the detailed analysis for each chart.
