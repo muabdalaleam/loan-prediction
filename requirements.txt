@@ -7,6 +7,7 @@ matplotlib
 polars
 seaborn
 sklearn-pandas
+shiny
 imblearn
 rsconnect-python
 uvicorn
