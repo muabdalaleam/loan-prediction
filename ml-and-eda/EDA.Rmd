@@ -2,7 +2,9 @@
 title: "Loan data EDA"
 author: "Muhammed Ahmed Abd Al ALeam"
 date: "2023-09-10"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -31,14 +33,14 @@ This is an analysis for the loan data-set on Kaggle this EDA notebook is done on
 
 -   How does the loan term correlate with the loan amount and how does this affect the loan status?
 
-```{r results='hide'}
+```{r echo = T, results = 'hide'}
 
-install.packages("hrbrthemes")
-install.packages("psych")
-install.packages("waffle")
-install.packages("ggpubr")
-install.packages("DT")
-install.packages("GGally")
+# install.packages("hrbrthemes")
+# install.packages("psych")
+# install.packages("waffle")
+# install.packages("ggpubr")
+# install.packages("DT")
+# install.packages("GGally")
 
 
 library(extrafont)
@@ -138,6 +140,8 @@ waffle_chart +
        subtitle= "with Credit history > 70\n") +
   theme(plot.title = element_text(hjust = .5),
         plot.subtitle = element_text(hjust = .5))
+
+# ggsave("plots/getting_loan_chance_with_good_credit_history.png", width = 7, height = 7, dpi = 300)
 ```
 
 We can find that about 4/5 of the people who had good credit history got their loan accepted which also means that **20%** of the applications with good credit history is rejected so we should investigate that .
@@ -159,6 +163,8 @@ ggplot(chart_data, aes(x= Loan_Status, y =Total_Monthly_Income)) +
   theme_classic()                                                                +
   theme(plot.title = element_text(hjust = 0.5),
         plot.subtitle = element_text(hjust = 0.5))
+
+# ggsave("plots/loan_acceptance_per_monthly_income.png", width = 7, height = 7, dpi = 300)
 ```
 
 Oh no we can't find any trend at the data above except when the total monthly income was really low so now we will see if the requested Loan amount has a weird trend in the rejected loans data and if not we will investigate more.
@@ -174,6 +180,8 @@ ggplot(chart_data, aes(x= Loan_Status, y =Loan_Amount)) +
   theme_classic()                                                              +
   theme(plot.title = element_text(hjust = 0.5),
         plot.subtitle = element_text(hjust = 0.5))
+
+# ggsave("plots/loan_amount_per_accepted_&_rejected_loans.png", width = 7, height = 7, dpi = 300)
 ```
 
 ## Answer 3
@@ -231,6 +239,7 @@ figure <- ggarrange(g1, g2,
                     ncol = 1, nrow = 2)
 
 figure
+# ggsave("plots/loan_acceptance_per_employment_type.png", width = 7, height = 7, dpi = 300)
 ```
 
 The chart can show us important thing which is that the loan acceptableness ratio is **higher** in the non-self employed people when we didn't filter the good credit histories only, but when we did the **acceptableness ratio was kinda the** **same** so we can find that employment type and in most cases all of the other categorical features **affect the** **credit history** **not the loan status directly**.
@@ -371,6 +380,8 @@ ggplot(chart_data, aes(x= Monthly_Income_Bins, y= Loan_Status_New))          +
   scale_y_continuous(n.breaks= 10, labels= function(y) paste0(y, "%"))       +
   theme(plot.title = element_text(hjust = 0.5),
         axis.text.x = element_text(angle=90, hjust=1))
+
+ggsave("plots/loan_acceptance_per_monthly_income.png", width = 10, height = 5, dpi = 300)
 ```
 
 As expected there's kinda a log curve but it's broken in two pints which are the `25K ~ Inf` and the `17.5K ~ 20K` mostly because that the records in those high ranges are rare especially that the data is only `600` rows anyways we can find that the sweat spot of the monthly Income is above the `2.5K` also when the monthly Income gets higher the more the requested loan amount gets higher so as you get
@@ -399,6 +410,7 @@ ggplot(df, aes(x= Loan_Amount, y= Loan_Term, color= Loan_Status))               
   theme(legend.position = "bottom", legend.background= element_rect("#f0f0f0"),
         plot.title = element_text(hjust = 0.5))
 
+# ggsave("plots/acceptance_per_loan_amount_&_term.png", width = 10, height = 7, dpi = 300)
 ```
 
 We can find really important insight with this chart only which is : our mock company usually doesn't accept the loans with **high terms nor low ones** they usually accept loan term of `120 Days` so our mock company should create special loans for people who wants long or short terms even those people are kinda rare and accept wider range of credit histories in terms of long loans.
@@ -421,18 +433,18 @@ ggpairs(chart_data, columns= 1:3, ggplot2::aes(colour= Loan_Status),
   scale_y_continuous(
     n.breaks = 5,
     labels = function(y) {
-      ifelse(y >= 1000, paste0(y / 1000, "K"), y)})                             +
+      ifelse(y >= 1000, paste0(y / 1000, "K"), y)})                      +
   scale_x_continuous(
     n.breaks = 5,
     labels = function(x) {
-      ifelse(x >= 1000, paste0(x / 1000, "K"), x)})                             +
-  theme_bw()                                                                    +
-  scale_fill_manual  (values = c(COLORS[2], COLORS[3]))                         +
-  scale_color_manual (values = c(COLORS[2], COLORS[3]))                         +
-  labs(title= "Loan Features Correlation Pair plot\n")             +
+      ifelse(x >= 1000, paste0(x / 1000, "K"), x)})                      +
+  theme_bw()                                                             +
+  scale_fill_manual  (values = c(COLORS[2], COLORS[3]))                  +
+  scale_color_manual (values = c(COLORS[2], COLORS[3]))                  +
+  labs(title= "Loan Features Correlation Pair plot\n")                   +
   theme(plot.title = element_text(hjust = 0.5))
 
-ggsave("test.png", width = 7, height = 7, dpi = 300)
+# ggsave("plots/loan_features_corr_paiplot.png", width = 7, height = 7, dpi = 300)
 ```
 
 ```{r}
@@ -463,7 +475,7 @@ ggplot(chart_data, aes(Loan_ID, value, fill= max_frequency))             +
       ifelse(x >= 1000, paste0(x / 1000, "K"), x)})                      +
   theme(plot.title = element_text(hjust = 0.5))
 
-ggsave("test2.png", height= 7, width= 8 , dpi= 300)
+# ggsave("plots/categorical_cols_dist.png", height= 7, width= 8 , dpi= 300)
 ```
 
 ## Conclusions
