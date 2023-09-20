@@ -65,7 +65,9 @@ with open('app/style.css', 'r') as file:
     css_code = file.read()
 
 app_ui = ui.page_fluid(
-      ui.tags.style(css_code),
+    ui.tags.style(css_code),
+    
+    ui.panel_title("Loan Prediction ML app", "Window title"),
     
     ui.div({'class': 'container'},
 
